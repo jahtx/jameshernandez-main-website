@@ -3,4 +3,26 @@
 
 .tagBit {
   background-color: $prime-orange;
+  .nameTagImg {
+    // width: 200px;
+    margin: 0 0 1rem 0;
+  }
+  .crate {
+    flex-direction: column;
+    border: 2px solid green;
+    @include MQ(S) {
+      flex-direction: row;
+    }
+    &__first {
+      justify-content: center;
+      width: 30%;
+      border: 2px solid white;
+    }
+    &__second {
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      margin: 0 1rem 1rem 1rem;
+    }
+  }
 }

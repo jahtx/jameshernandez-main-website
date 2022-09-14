@@ -29,7 +29,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Aboreto`],
+        fonts: [`Roboto Condensed`],
         display: "swap",
       },
     },
