@@ -15,9 +15,15 @@
     }
     &__first {
       justify-content: center;
-      width: 100%;
-      //   border: 2px solid white;
+
+      .nameTagImg {
+        height: 400px;
+      }
+      //  border: 2px solid white;
       @include MQ(S) {
+        width: 50%;
+      }
+      @include MQ(M) {
         width: 30%;
       }
     }
@@ -25,10 +31,17 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin: 0 1rem 1rem 1rem;
+      // margin: 0 1rem 1rem 1rem;
       @include MQ(S) {
+        width: 50%;
+      }
+      @include MQ(M) {
         width: 70%;
       }
+    }
+    &__innerText {
+      margin: 2rem;
+      font-size: 1.2rem;
     }
   }
 }
