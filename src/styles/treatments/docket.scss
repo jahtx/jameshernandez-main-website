@@ -1,0 +1,62 @@
+@import "../dominant/index.scss";
+
+ul.docket {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  row-gap: 0.5rem;
+
+  @include MQ(S) {
+    justify-content: space-around;
+  }
+
+  .docketItem {
+    // li
+    list-style: none;
+    display: inline-block;
+    width: 95%;
+    margin: 0 0.25rem;
+
+    @include MQ(S) {
+      width: 48%;
+    }
+    @include MQ(M) {
+      width: 31%;
+    }
+
+    a {
+      color: black;
+      display: block;
+      border: 2px solid silver;
+      background-color: white;
+      border-radius: 1rem;
+      transition: background-color 500ms;
+
+      @include MQ(S) {
+        height: 100%;
+      }
+      &:hover {
+        text-decoration: none;
+        border: 2px solid hsla(129, 13%, 62%, 0.967);
+        background-color: hsla(136, 51%, 85%, 0.977);
+        //color: white;
+      }
+      .title {
+        padding: 0.5rem 0 0 0;
+        font-family: "Aboreto", "Special Elite";
+        text-align: center;
+        // &:hover {
+        //   text-decoration: underline;
+        // }
+      }
+    }
+    &__descrip {
+      font-size: 0.8rem;
+      line-height: 1rem;
+      padding: 0.4rem 0.8rem 0.8rem 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+$prime-red: #ec2e2e;
+$tiffany-bluegreen: hsla(168, 100%, 75%, 0.18);
+$prime-color-1: hsla(0, 0%, 80%, 0.515);
+
+$section-heading: "Montserrat", "Open Sans", "Trebuchet MS", Sans-serif,
+  "Bebas Neue";
+
+@mixin section-head {
+  font-family: $section-heading;
+  text-transform: uppercase;
+}

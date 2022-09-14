@@ -1,0 +1,21 @@
+// This is where the main styles for the sandbox come together
+
+// it binds dominant styles (always present) with "treatment" specific styles
+// "dominant" is a replacement for "includeInaAll"
+
+@import "./dominant/index.scss";
+@import "./variables/fonts-and-colors.scss";
+// @import "./treatments/parallax.scss";
+@import "./treatments/docket.scss";
+:root {
+  --scale: 0.1;
+  --space: 8vmin;
+  --font-primary: "Lora", "Open Sans", "Trebuchet MS", Sans-serif;
+}
+body {
+  font-family: var(--font-primary);
+}
+
+.sectionHeading {
+  @include section-head;
+}
