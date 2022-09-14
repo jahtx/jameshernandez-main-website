@@ -9,7 +9,7 @@
   }
   .crate {
     flex-direction: column;
-    //  border: 2px solid green;
+    // border: 2px solid green;
     @include MQ(S) {
       flex-direction: row;
     }
