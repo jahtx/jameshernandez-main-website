@@ -9,20 +9,26 @@
   }
   .crate {
     flex-direction: column;
-    border: 2px solid green;
+    //  border: 2px solid green;
     @include MQ(S) {
       flex-direction: row;
     }
     &__first {
       justify-content: center;
-      width: 30%;
-      border: 2px solid white;
+      width: 100%;
+      //   border: 2px solid white;
+      @include MQ(S) {
+        width: 30%;
+      }
     }
     &__second {
       justify-content: center;
       align-items: center;
-      width: 70%;
+      width: 100%;
       margin: 0 1rem 1rem 1rem;
+      @include MQ(S) {
+        width: 70%;
+      }
     }
   }
 }
