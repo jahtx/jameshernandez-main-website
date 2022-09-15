@@ -2,7 +2,8 @@ import * as React from "react";
 import type { HeadFC } from "gatsby";
 import MainLayout from "../layouts/MainLayout/MainLayout";
 import TagBit from "./Index/TagBit/TagBit";
-import PackBit from "./Index/PackBit/PackBit";
+import PackBit from "./Index/PackBit";
+import AnthologyBit from "./Index/AnthologyBit";
 
 import "../styles/index.scss";
 
@@ -11,6 +12,7 @@ const IndexPage = () => {
     <MainLayout>
       <TagBit />
       <PackBit />
+      <AnthologyBit />
     </MainLayout>
   );
 };
