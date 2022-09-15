@@ -30,8 +30,6 @@ ul.docket {
     a {
       color: black;
       display: block;
-      border: 2px solid silver;
-      background-color: white;
       border-radius: 1rem;
       transition: background-color 500ms;
 
@@ -40,13 +38,9 @@ ul.docket {
       }
       &:hover {
         text-decoration: none;
-        border: 2px solid hsla(129, 13%, 62%, 0.967);
-        background-color: hsla(136, 51%, 85%, 0.977);
-        //color: white;
       }
       .title {
         padding: 0.5rem 0 0 0;
-        font-family: "Aboreto", "Special Elite";
         text-align: center;
         // &:hover {
         //   text-decoration: underline;

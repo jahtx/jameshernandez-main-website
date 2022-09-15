@@ -7,11 +7,9 @@ import "./TitleBit.scss";
 
 const TitleBit = () => {
   return (
-    <div className="titleBit">
-      <Container className="titleBit__cont d-flex justify-content-center">
-        <SouthTejasLogo />
-        <SouthTejasLogoDesktop />
-      </Container>
+    <div className="titleBit d-flex justify-content-center">
+      <SouthTejasLogo />
+      <SouthTejasLogoDesktop />
     </div>
   );
 };

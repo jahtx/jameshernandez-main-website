@@ -2,6 +2,7 @@ import * as React from "react";
 import type { HeadFC } from "gatsby";
 import MainLayout from "../layouts/MainLayout/MainLayout";
 import TagBit from "./Index/TagBit/TagBit";
+import PackBit from "./Index/PackBit/PackBit";
 
 import "../styles/index.scss";
 
@@ -9,7 +10,7 @@ const IndexPage = () => {
   return (
     <MainLayout>
       <TagBit />
-      IndexPage
+      <PackBit />
     </MainLayout>
   );
 };
