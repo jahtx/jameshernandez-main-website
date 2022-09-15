@@ -10,10 +10,9 @@
 :root {
   --scale: 0.1;
   --space: 8vmin;
-  --font-primary: "Roboto Condensed", "Open Sans", "Trebuchet MS", Sans-serif;
 }
 body {
-  font-family: var(--font-primary);
+  font-family: $main-font;
 }
 
 .sectionHeading {

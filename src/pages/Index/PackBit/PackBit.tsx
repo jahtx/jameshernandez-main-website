@@ -24,7 +24,7 @@ const PackBit = () => {
               return (
                 <li className="docketItem">
                   <a href={url}>
-                    <div className="title">{articleName}</div>
+                    <h3 className="title">{articleName}</h3>
                     <div className="docketItem__descrip">{lead}</div>
                   </a>
                 </li>

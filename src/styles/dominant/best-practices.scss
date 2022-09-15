@@ -1,10 +1,17 @@
 // bestpractices.scss is where primary HTML tags are defined
 // and some styles I've deemed the best to keep in all projects
+@import "../variables/fonts-and-colors.scss";
 
 html {
   font-size: 110%;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $standard-heading;
+}
 h1 {
   font-size: 1.5rem;
   margin: 1em 0 0.2em 0;

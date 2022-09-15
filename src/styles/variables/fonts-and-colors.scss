@@ -3,13 +3,12 @@ $tiffany-bluegreen: hsla(168, 100%, 75%, 0.18);
 $prime-color-1: hsla(0, 0%, 80%, 0.515);
 $prime-orange: #e84723;
 
-$main-font: "Roboto Condensed", "Open Sans", "Trebuchet MS", Sans-serif,
-  "Bebas Neue";
+$main-font: "Roboto", "Open Sans", "Trebuchet MS", Sans-serif, "Bebas Neue";
 
-$section-heading: "Roboto Condensed", "Open Sans", "Trebuchet MS", Sans-serif,
+$standard-heading: "Roboto Condensed", "Open Sans", "Trebuchet MS", Sans-serif,
   "Bebas Neue";
 
 @mixin section-head {
-  font-family: $section-heading;
+  font-family: $standard-heading;
   text-transform: uppercase;
 }
