@@ -10,6 +10,7 @@ type ArticleType = {
   articleName: string;
   url: string;
   image: string;
+  imgAlt: string;
   lead: string;
 };
 
@@ -72,11 +73,12 @@ const PackBit = () => {
   const articles: Array<ArticleType> = infoData.articles;
   return (
     <section className="packBit">
+      <h2 className="sr-only">Design Topics</h2>
       <Container>
         <ul className="docket">
           {articles &&
             articles.map((article) => {
-              const { articleName, url, lead, image } = article;
+              const { articleName, url, lead, image, imgAlt } = article;
               const id = nanoid();
               return (
                 <li key={id} className="docketItem">
@@ -86,7 +88,7 @@ const PackBit = () => {
                       <GatsbyImage
                         className="docket__mainImg"
                         image={getImage(renderSwitch(image))}
-                        alt="alt"
+                        alt={imgAlt}
                       />
                     </div>
                     <div className="docketItem__descrip">{lead}</div>

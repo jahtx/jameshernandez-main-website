@@ -4,18 +4,21 @@
       "articleName": "Design Tools",
       "url": "javascript:;",
       "image": "screens",
+      "imgAlt": "wireframes",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     },
     {
       "articleName": "Process",
       "url": "javascript:;",
       "image": "process",
+      "imgAlt": "process diagram",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     },
     {
       "articleName": "Development",
       "url": "javascript:;",
       "image": "ipad",
+      "imgAlt": "ipad",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     }
   ]
