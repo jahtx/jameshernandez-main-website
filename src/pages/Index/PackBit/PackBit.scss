@@ -1,0 +1,9 @@
+@import "../../../styles/dominant/breakpoints.scss";
+
+.docket__mainImg {
+  max-width: 200px;
+  @include MQ(S) {
+    width: 80%;
+    max-width: 250px;
+  }
+}

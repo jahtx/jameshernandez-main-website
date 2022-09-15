@@ -2,17 +2,20 @@
   "articles": [
     {
       "articleName": "Design Tools",
-      "url": "https://www.getrichslowly.org/",
+      "url": "/design",
+      "image": "screens",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     },
     {
       "articleName": "Process",
-      "url": "https://ritholtz.com/",
+      "url": "/process",
+      "image": "process",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     },
     {
       "articleName": "Development",
-      "url": "https://global-macro-monitor.com/",
+      "url": "/development",
+      "image": "ipad",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     }
   ]
