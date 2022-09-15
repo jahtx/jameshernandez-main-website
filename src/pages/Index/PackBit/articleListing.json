@@ -5,21 +5,21 @@
       "url": "javascript:;",
       "image": "screens",
       "imgAlt": "wireframes",
-      "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
+      "lead": "Fusce elementum mollis massa eu sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae pulvinar odio. Nam condimentum, purus eu finibus venenatis, est tellus bibendum mi, id viverra erat ligula non nunc. Duis iaculis est ante, eget porttitor nisi scelerisque a."
     },
     {
       "articleName": "Process",
       "url": "javascript:;",
       "image": "process",
       "imgAlt": "process diagram",
-      "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
+      "lead": "Quisque bibendum nisi sit amet ipsum ultricies rhoncus. Fusce varius vulputate faucibus. Nunc ac vestibulum nulla, id aliquam nisi. Quisque vehicula nibh suscipit ultrices feugiat. Duis porttitor malesuada metus, sed cursus libero congue feugiat. "
     },
     {
       "articleName": "Development",
       "url": "javascript:;",
       "image": "ipad",
       "imgAlt": "ipad",
-      "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
+      "lead": "Praesent a facilisis lectus, eleifend lobortis tortor. Vestibulum mollis ullamcorper dignissim. Curabitur est neque, suscipit at diam quis, semper cursus dui. Duis molestie felis in mattis molestie. Quisque suscipit tellus nisi, vitae scelerisque erat auctor aliquet. Cras non metus orci. "
     }
   ]
 }

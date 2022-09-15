@@ -1,11 +1,19 @@
 @import "../../../styles/dominant/breakpoints.scss";
 
 .packBit {
-  .docket__mainImg {
-    max-width: 200px;
-    @include MQ(S) {
-      width: 80%;
-      max-width: 250px;
+  .docketItem {
+    &__mainImg {
+      max-width: 210px;
+      @include MQ(S) {
+        width: 80%;
+        max-width: 250px;
+      }
+    }
+    &__descrip {
+      padding: 0.5rem 3rem 2rem;
+      @include MQ(S) {
+        padding: 0.4rem 0.8rem 0.8rem 0.8rem;
+      }
     }
   }
 }

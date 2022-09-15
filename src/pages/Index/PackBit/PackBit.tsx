@@ -75,7 +75,7 @@ const PackBit = () => {
     <section className="packBit">
       <h2 className="sr-only">Design Topics</h2>
       <Container>
-        <ul className="docket">
+        <ul className="docket m-0 p-0">
           {articles &&
             articles.map((article) => {
               const { articleName, url, lead, image, imgAlt } = article;
@@ -83,10 +83,10 @@ const PackBit = () => {
               return (
                 <li key={id} className="docketItem">
                   <a href={url}>
-                    <h3 className="title">{articleName}</h3>
+                    <h3 className="docketItem__title">{articleName}</h3>
                     <div className="text-center">
                       <GatsbyImage
-                        className="docket__mainImg"
+                        className="docketItem__mainImg"
                         image={getImage(renderSwitch(image))}
                         alt={imgAlt}
                       />

@@ -8,8 +8,10 @@ import "./TitleBit.scss";
 const TitleBit = () => {
   return (
     <div className="titleBit d-flex justify-content-center">
-      <SouthTejasLogo />
-      <SouthTejasLogoDesktop />
+      <h1 className="d-flex justify-content-center m-0">
+        <SouthTejasLogo />
+        <SouthTejasLogoDesktop />
+      </h1>
     </div>
   );
 };

@@ -2,9 +2,8 @@
 
 .titleBit {
   background-color: black;
-  &__cont {
-    padding: 0 !important;
-    // border: 2px solid yellow;
+  h1 {
+    width: 100%;
   }
   #southTejasLogo {
     width: 100%;
@@ -16,8 +15,6 @@
   }
   #southTejasLogoDesktop {
     width: 100%;
-    padding: 0;
-    margin: 0;
     display: none;
     @include MQ(S) {
       display: block;
