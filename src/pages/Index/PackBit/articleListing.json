@@ -2,19 +2,19 @@
   "articles": [
     {
       "articleName": "Design Tools",
-      "url": "/design",
+      "url": "javascript:;",
       "image": "screens",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     },
     {
       "articleName": "Process",
-      "url": "/process",
+      "url": "javascript:;",
       "image": "process",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     },
     {
       "articleName": "Development",
-      "url": "/development",
+      "url": "javascript:;",
       "image": "ipad",
       "lead": "Nam facilisis volutpat felis, pulvinar aliquam massa eleifend ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit tellus ac diam iaculis viverra."
     }
