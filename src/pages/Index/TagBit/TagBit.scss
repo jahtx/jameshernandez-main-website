@@ -3,6 +3,10 @@
 
 .tagBit {
   background-color: $prime-orange;
+  background-image: url("../../../images/back/mobile-screens.png");
+  background-size: 1300px;
+  background-position: center;
+  background-repeat: no-repeat;
   .nameTagImg {
     // width: 200px;
     margin: 0 0 1rem 0;
@@ -13,6 +17,9 @@
     @include MQ(S) {
       flex-direction: row;
     }
+    &__heading {
+      font-size: 2rem;
+    }
     &__first {
       justify-content: center;
 
@@ -21,7 +28,7 @@
       }
       //  border: 2px solid white;
       @include MQ(S) {
-        width: 50%;
+        width: 40%;
       }
       @include MQ(M) {
         width: 30%;
@@ -33,15 +40,15 @@
       width: 100%;
       // margin: 0 1rem 1rem 1rem;
       @include MQ(S) {
-        width: 50%;
+        width: 60%;
       }
       @include MQ(M) {
         width: 70%;
       }
     }
     &__innerText {
-      margin: 2rem;
-      font-size: 1.2rem;
+      margin: 1rem;
+      font-size: 1.1rem;
     }
   }
 }

@@ -34,6 +34,7 @@ const TagBit = () => {
         </div>
         <div className="crate__second d-flex text-light">
           <div className="crate__innerText">
+            <h2 className="crate__heading text-center">&#xa1;Bienvendas!</h2>
             <p>
               I’m a User Experience Designer and Front-end developer in South
               Texas. Suspendisse ultrices metus id diam sollicitudin
