@@ -1,0 +1,26 @@
+@import "../../../styles/dominant/breakpoints.scss";
+@import "../../../styles/variables/fonts-and-colors.scss";
+
+.anthologyBit {
+  background-color: $stdesign-scheme-turq;
+  background-image: url("../../../images/back/wireframes-white.png");
+  background-size: 800px;
+  background-position: center;
+  background-repeat: repeat-x;
+  .pack {
+    flex-direction: column;
+    @include MQ(S) {
+      flex-direction: row;
+    }
+    &__first {
+      @include MQ(S) {
+        width: 40%;
+      }
+    }
+    &__second {
+      @include MQ(S) {
+        width: 60%;
+      }
+    }
+  }
+}
