@@ -1,0 +1,97 @@
+@import "../../../styles/dominant/breakpoints.scss";
+@import "../../../styles/variables/fonts-and-colors.scss";
+
+.contactBit {
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(218, 218, 218, 1) 0%,
+  //   rgba(255, 255, 255, 0.8760998721050127) 100%
+  // );
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+  .headingCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @include MQ(M) {
+      justify-content: space-between;
+    }
+    @include MQ(L) {
+      width: 70%;
+      padding: 0 1%;
+    }
+  }
+  .heading__area {
+    width: 200px;
+    display: none;
+    text-align: left;
+    @include MQ(M) {
+      display: block;
+    }
+  }
+  .multiBox {
+    display: flex;
+
+    &__contImg {
+      width: 100%;
+      display: none;
+      @include MQ(L) {
+        //display: flex;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        width: 25%;
+        height: auto;
+        padding: 0 10px;
+      }
+    }
+
+    &__contForm {
+      width: 100%;
+      @include MQ(L) {
+        width: 70%;
+        padding: 0 1%;
+      }
+    }
+  }
+
+  &__form {
+    padding: 0;
+    margin: 0;
+  }
+  .form-label {
+    padding: 1rem 0 0 0;
+    margin: 0;
+  }
+  &__captchaCont {
+    display: flex;
+    justify-content: center;
+    @include MQ(S) {
+      justify-content: space-between;
+    }
+  }
+  &__spacemanCont {
+    margin-bottom: 20px;
+    display: none;
+    @include MQ(M) {
+      display: block;
+    }
+  }
+  .buttonContainer {
+    justify-content: flex-end;
+
+    .sendButton {
+      width: 100%;
+
+      @include MQ(S) {
+        width: 10rem;
+      }
+    }
+  }
+}
