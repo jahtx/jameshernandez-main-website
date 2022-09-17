@@ -1,0 +1,8 @@
+.footer {
+  background-image: url("../../images/back/squiggle-line.png");
+  background-repeat: repeat-x;
+  background-size: 8rem;
+  &__text {
+    color: grey;
+  }
+}

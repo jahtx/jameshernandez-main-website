@@ -11,7 +11,7 @@ const ContactBit = () => {
 
   const [human, setHuman] = useState(false);
 
-  const [state, handleSubmit] = useForm("mvoygllr");
+  const [state, handleSubmit] = useForm("mrgdpogd");
 
   const handleCaptcha = (value) => {
     value ? setHuman(true) : setHuman(false);
@@ -32,10 +32,9 @@ const ContactBit = () => {
         {!state.succeeded ? (
           <div className="multiBox justify-content-center">
             <div className="multiBox__contForm">
-              Aenean convallis at sapien et sodales. Morbi egestas, purus a
-              malesuada egestas, nibh massa convallis dolor, laoreet consectetur
-              ipsum purus sed lorem. Donec vitae gravida est. Aliquam consequat
-              posuere risus eu aliquam. Morbi id tempor ante.
+              I'm available for side-projects involving UX, web development,
+              general consulting, and full-time employment. Send me a note and
+              we'll be in touch!
               <Form className="contactBit__form" onSubmit={handleSubmitButton}>
                 <Form.Group>
                   <Form.Label className="contactBit__formLabel">
