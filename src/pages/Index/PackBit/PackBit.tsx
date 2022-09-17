@@ -73,33 +73,40 @@ const PackBit = () => {
   const articles: Array<ArticleType> = infoData.articles;
   return (
     <section className="packBit">
-      <h2 className="sr-only">Design Topics</h2>
-      <Container>
-        <ul className="docket m-0 p-0 d-flex flex-row flex-wrap justify-content-center">
-          {articles &&
-            articles.map((article) => {
-              const { articleName, url, lead, image, imgAlt } = article;
-              const id = nanoid();
-              return (
-                <li key={id} className="docketItem d-inline-block">
-                  <a className="text-dark" href={url}>
-                    <h3 className="docketItem__title text-center one-pt-3-rem">
-                      {articleName}
-                    </h3>
-                    <div className="text-center">
-                      <GatsbyImage
-                        className="docketItem__mainImg"
-                        image={getImage(renderSwitch(image))}
-                        alt={imgAlt}
-                      />
-                    </div>
-                    <div className="docketItem__descrip pt-9-rem">{lead}</div>
-                  </a>
-                </li>
-              );
-            })}
-        </ul>
-      </Container>
+      <div>
+        <h2 className="sr-only">Design Topics</h2>
+        <Container>
+          <ul className="docket m-0 p-0 d-flex flex-row flex-wrap justify-content-center">
+            {articles &&
+              articles.map((article) => {
+                const { articleName, url, lead, image, imgAlt } = article;
+                const id = nanoid();
+                return (
+                  <li
+                    key={id}
+                    className="docketItem d-inline-block trans-2sec"
+                    data-sal="fade"
+                    data-sal-easing="ease"
+                  >
+                    <a className="text-dark" href={url}>
+                      <h3 className="docketItem__title text-center one-pt-3-rem">
+                        {articleName}
+                      </h3>
+                      <div className="text-center">
+                        <GatsbyImage
+                          className="docketItem__mainImg"
+                          image={getImage(renderSwitch(image))}
+                          alt={imgAlt}
+                        />
+                      </div>
+                      <div className="docketItem__descrip pt-9-rem">{lead}</div>
+                    </a>
+                  </li>
+                );
+              })}
+          </ul>
+        </Container>
+      </div>
     </section>
   );
 };
