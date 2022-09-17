@@ -1,13 +1,9 @@
 @import "../../../styles/dominant/breakpoints.scss";
 @import "../../../styles/variables/fonts-and-colors.scss";
 
-.anthologyBit {
-  background-color: $stdesign-scheme-turq;
-  background-image: url("../../../images/back/wireframes-white.png");
-  background-size: 800px;
-  background-position: center;
-  background-repeat: repeat-x;
-  .pack {
+.digestBit {
+  background-color: $stdesign-scheme-green;
+  .parcel {
     flex-direction: column;
     @include MQ(S) {
       flex-direction: row;
@@ -15,11 +11,14 @@
     &__first {
       @include MQ(S) {
         width: 35%;
+        padding: 1rem 1.4rem;
       }
     }
     &__second {
+      padding: 0 1.4rem;
       @include MQ(S) {
         width: 65%;
+        padding: 1rem 1.4rem;
       }
     }
   }

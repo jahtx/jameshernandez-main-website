@@ -1,20 +1,20 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
-import "./AnthologyBit.scss";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
+import "./DigestBit.scss";
 
-const AnthologyBit = () => {
+const DigestBit = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        websitesImg: file(relativePath: { eq: "portfolio-screens.png" }) {
+        workiconsImg: file(relativePath: { eq: "work-icons-assortment.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 85
               placeholder: BLURRED
               formats: [WEBP]
-              height: 150
+              height: 225
               transformOptions: { fit: CONTAIN, cropFocus: CENTER }
             )
           }
@@ -23,18 +23,17 @@ const AnthologyBit = () => {
     `
   );
   return (
-    <div className="anthologyBit text-light">
-      <h2 className="text-center t-block pt-3">Portfolio</h2>
+    <div className="digestBit text-light">
+      <h2 className="text-center t-block pt-3 one-pt-8-rem">CV</h2>
       <Container>
-        <div className="pack d-flex">
-          <div className="pack__first d-flex align-items-center justify-content-center">
+        <div className="parcel d-flex">
+          <div className="parcel__first d-flex align-items-center justify-content-center">
             <GatsbyImage
-              className="nameTagImg"
-              image={getImage(data.websitesImg)}
-              alt="Name Tag"
+              image={getImage(data.workiconsImg)}
+              alt="Logos of places that I have worked"
             />
           </div>
-          <div className="pack__second p-4">
+          <div className="parcel__second">
             <p>
               Aenean gravida, ligula eget ultricies varius, libero nunc
               tincidunt eros, id hendrerit tortor diam at leo. Donec iaculis
@@ -54,4 +53,4 @@ const AnthologyBit = () => {
   );
 };
 
-export default AnthologyBit;
+export default DigestBit;

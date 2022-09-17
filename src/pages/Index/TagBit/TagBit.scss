@@ -7,13 +7,9 @@
   background-size: 1200px;
   background-position: center;
   background-repeat: no-repeat;
-  .nameTagImg {
-    // width: 200px;
-    margin: 0 0 1rem 0;
-  }
+
   .crate {
     flex-direction: column;
-    // border: 2px solid green;
     @include MQ(S) {
       flex-direction: row;
     }
@@ -21,12 +17,10 @@
       font-size: 2rem;
     }
     &__first {
-      justify-content: center;
-
       .nameTagImg {
+        margin: 0 0 1rem 0;
         height: 400px;
       }
-      //  border: 2px solid white;
       @include MQ(S) {
         width: 40%;
       }
@@ -35,10 +29,6 @@
       }
     }
     &__second {
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      // margin: 0 1rem 1rem 1rem;
       @include MQ(S) {
         width: 60%;
       }
@@ -47,8 +37,6 @@
       }
     }
     &__innerText {
-      margin: 1rem;
-      font-size: 1rem;
       max-width: 35rem;
     }
   }

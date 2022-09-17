@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout";
 import TagBit from "./Index/TagBit";
 import PackBit from "./Index/PackBit";
 import AnthologyBit from "./Index/AnthologyBit";
+import DigestBit from "./Index/DigestBit";
 import "../styles/index.scss";
 
 const IndexPage = () => {
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <TagBit />
       <PackBit />
       <AnthologyBit />
+      <DigestBit />
     </MainLayout>
   );
 };

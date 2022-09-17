@@ -25,15 +25,15 @@ const TagBit = () => {
   return (
     <section className="tagBit">
       <Container className="crate d-flex">
-        <div className="crate__first d-flex">
+        <div className="crate__first d-flex justify-content-center">
           <GatsbyImage
             className="nameTagImg"
             image={getImage(data.nameTagImg)}
             alt="Name Tag"
           />
         </div>
-        <div className="crate__second d-flex text-light">
-          <div className="crate__innerText">
+        <div className="crate__second d-flex text-light justify-content-center align-items-center">
+          <div className="crate__innerText one-rem m-1">
             <h2 className="crate__heading text-center">&#xa1;Bienvendas!</h2>
             <p>
               I’m a User Experience Designer and Front-end developer in South
