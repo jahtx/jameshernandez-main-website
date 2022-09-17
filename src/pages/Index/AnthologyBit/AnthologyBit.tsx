@@ -27,7 +27,11 @@ const AnthologyBit = () => {
       <h2 className="text-center t-block pt-3">Portfolio</h2>
       <Container>
         <div className="pack d-flex">
-          <div className="pack__first d-flex align-items-center justify-content-center">
+          <div
+            className="pack__first d-flex align-items-center trans-right justify-content-center"
+            data-sal="slide-right"
+            data-sal-easing="ease"
+          >
             <GatsbyImage
               className="nameTagImg"
               image={getImage(data.websitesImg)}

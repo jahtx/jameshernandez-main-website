@@ -25,6 +25,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-scroll-reveal`,
 
     {
       resolve: `gatsby-plugin-google-fonts`,

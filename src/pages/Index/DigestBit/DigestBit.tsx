@@ -27,7 +27,11 @@ const DigestBit = () => {
       <h2 className="text-center t-block pt-3 one-pt-8-rem">CV</h2>
       <Container>
         <div className="parcel d-flex">
-          <div className="parcel__first d-flex align-items-center justify-content-center">
+          <div
+            className="parcel__first d-flex align-items-center trans-right justify-content-center"
+            data-sal="slide-right"
+            data-sal-easing="ease"
+          >
             <GatsbyImage
               image={getImage(data.workiconsImg)}
               alt="Logos of places that I have worked"
