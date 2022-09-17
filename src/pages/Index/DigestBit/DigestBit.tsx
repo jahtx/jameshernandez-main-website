@@ -14,7 +14,7 @@ const DigestBit = () => {
               quality: 85
               placeholder: BLURRED
               formats: [WEBP]
-              height: 225
+              height: 260
               transformOptions: { fit: CONTAIN, cropFocus: CENTER }
             )
           }
@@ -24,35 +24,33 @@ const DigestBit = () => {
   );
   return (
     <div className="digestBit text-light">
-      <h2 className="text-center t-block pt-3 one-pt-8-rem">CV</h2>
-      <Container>
-        <div className="parcel d-flex">
-          <div
-            className="parcel__first d-flex align-items-center trans-right justify-content-center"
-            data-sal="slide-right"
-            data-sal-easing="ease"
-          >
-            <GatsbyImage
-              image={getImage(data.workiconsImg)}
-              alt="Logos of places that I have worked"
-            />
+      <div className="trans-2sec" data-sal="fade" data-sal-easing="ease">
+        <h2 className="text-center t-block pt-3 one-pt-8-rem">CV</h2>
+        <Container>
+          <div className="parcel d-flex">
+            <div className="parcel__first d-flex align-items-center justify-content-center">
+              <GatsbyImage
+                image={getImage(data.workiconsImg)}
+                alt="Logos of places that I have worked"
+              />
+            </div>
+            <div className="parcel__second">
+              <p>
+                Aenean gravida, ligula eget ultricies varius, libero nunc
+                tincidunt eros, id hendrerit tortor diam at leo. Donec iaculis
+                aliquet odio at interdum. Pellentesque lobortis orci felis, nec
+                placerat ante auctor sit amet. Morbi feugiat diam at magna
+                vestibulum, vitae condimentum est auctor.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+                facilisis sem, dapibus volutpat nibh. Donec id odio arcu. Nam
+                ornare gravida rutrum. Nam vel molestie quam.
+              </p>
+            </div>
           </div>
-          <div className="parcel__second">
-            <p>
-              Aenean gravida, ligula eget ultricies varius, libero nunc
-              tincidunt eros, id hendrerit tortor diam at leo. Donec iaculis
-              aliquet odio at interdum. Pellentesque lobortis orci felis, nec
-              placerat ante auctor sit amet. Morbi feugiat diam at magna
-              vestibulum, vitae condimentum est auctor.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-              facilisis sem, dapibus volutpat nibh. Donec id odio arcu. Nam
-              ornare gravida rutrum. Nam vel molestie quam.
-            </p>
-          </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </div>
   );
 };
