@@ -4,7 +4,7 @@
 .mainNav {
   display: none;
   @include MQ(L) {
-    display: block;
+    display: none;
   }
   ul {
     background-color: black;
@@ -33,7 +33,7 @@
 .mobileMenu {
   display: block;
   @include MQ(L) {
-    display: none;
+    display: block;
   }
   .icon-1,
   .icon-2,
@@ -61,7 +61,7 @@
     position: fixed;
     height: 60px;
     width: 60px;
-    top: 0.4rem;
+    top: 2rem;
     left: 3%;
     z-index: 1000;
     cursor: pointer;

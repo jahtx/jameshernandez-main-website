@@ -3,12 +3,12 @@
     {
       "linkName": "Portfolio",
       "url": "#portfolio",
-      "ariaLabel": "new articles on economics, covid"
+      "ariaLabel": "synopsis of portfolio and link to all items"
     },
     {
       "linkName": "Curriculum Vitae",
       "url": "#cv",
-      "ariaLabel": "fake accolades from around the globe"
+      "ariaLabel": "curriculum vitae"
     },
 
     {
