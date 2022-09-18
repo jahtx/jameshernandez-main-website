@@ -8,13 +8,15 @@ const DigestBit = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        workiconsImg: file(relativePath: { eq: "work-icons-assortment.png" }) {
+        workiconsImg: file(
+          relativePath: { eq: "work-icons-assortment-long.png" }
+        ) {
           childImageSharp {
             gatsbyImageData(
               quality: 85
               placeholder: BLURRED
               formats: [WEBP]
-              height: 270
+              height: 250
               transformOptions: { fit: CONTAIN, cropFocus: CENTER }
             )
           }

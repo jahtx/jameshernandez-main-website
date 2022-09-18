@@ -25,7 +25,7 @@ const AnthologyBit = () => {
   return (
     <div id="portfolio" className="anthologyBit text-light">
       <div className="trans-2sec" data-sal="fade" data-sal-easing="ease">
-        <h2 className="text-center t-block pt-3">Portfolio</h2>
+        <h2 className="text-center t-block pt-3 one-pt-8-rem">Portfolio</h2>
         <Container>
           <div className="pack d-flex">
             <div className="pack__first d-flex align-items-center justify-content-center">
