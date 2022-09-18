@@ -40,15 +40,15 @@ const TagBit = () => {
           <div className="crate__innerText one-rem m-1">
             <h2 className="crate__heading text-center">&#xa1;Bienvendas!</h2>
             <p>
-              I’m a User Experience Designer and Front-end developer in South
-              Texas. Suspendisse ultrices metus id diam sollicitudin
-              sollicitudin. Fusce a fringilla libero, at interdum neque. Ut sit
-              amet nibh odio.
+              Hi, I'm James, a Product & Services UX Designer and Front-end
+              Engineer in the San Antonio area. I am passionate about solving
+              complex app design problems from conception to deployment to
+              continuous improvement.
             </p>
             <p>
-              Mauris feugiat lorem vel velit pharetra hendrerit. Nam urna augue,
-              pulvinar eu lorem in, efficitur rutrum nibh. Quisque et libero
-              quis nisi suscipit pharetra.
+              During my career, I have contributed to efforts for web projects
+              for USAA, Accenture, Outside Analytics, RBFCU, the U.S. Air Force,
+              and the U.S. Department of Education.
             </p>
           </div>
         </div>

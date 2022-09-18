@@ -72,7 +72,7 @@ const PackBit = () => {
 
   const articles: Array<ArticleType> = infoData.articles;
   return (
-    <section className="packBit">
+    <section id="articles" className="packBit">
       <div>
         <h2 className="sr-only">Design Topics</h2>
         <Container>

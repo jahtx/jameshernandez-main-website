@@ -37,11 +37,9 @@ const AnthologyBit = () => {
             </div>
             <div className="pack__second p-4">
               <p>
-                Aenean gravida, ligula eget ultricies varius, libero nunc
-                tincidunt eros, id hendrerit tortor diam at leo. Donec iaculis
-                aliquet odio at interdum. Pellentesque lobortis orci felis, nec
-                placerat ante auctor sit amet. Morbi feugiat diam at magna
-                vestibulum, vitae condimentum est auctor.
+                Examples of past work and ongoing projects. I like to mettle out
+                the design in Sketch first for initial brainstorming sessions
+                then create HTML/CSS wireframes in either React or Angular.
               </p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
