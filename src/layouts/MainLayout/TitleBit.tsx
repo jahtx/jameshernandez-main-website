@@ -7,7 +7,7 @@ import "./TitleBit.scss";
 
 const TitleBit = () => {
   return (
-    <div className="titleBit d-flex justify-content-center">
+    <div id="home" className="titleBit d-flex justify-content-center">
       <h1 className="d-flex justify-content-center m-0">
         <SouthTejasLogo />
         <SouthTejasLogoDesktop />

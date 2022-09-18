@@ -23,7 +23,7 @@ const AnthologyBit = () => {
     `
   );
   return (
-    <div className="anthologyBit text-light">
+    <div id="portfolio" className="anthologyBit text-light">
       <div className="trans-2sec" data-sal="fade" data-sal-easing="ease">
         <h2 className="text-center t-block pt-3">Portfolio</h2>
         <Container>

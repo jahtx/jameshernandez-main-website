@@ -1,0 +1,20 @@
+{
+  "navItems": [
+    {
+      "linkName": "Portfolio",
+      "url": "#portfolio",
+      "ariaLabel": "new articles on economics, covid"
+    },
+    {
+      "linkName": "Curriculum Vitae",
+      "url": "#cv",
+      "ariaLabel": "fake accolades from around the globe"
+    },
+
+    {
+      "linkName": "Contact",
+      "url": "#contact",
+      "ariaLabel": "if you really do need to contact me"
+    }
+  ]
+}

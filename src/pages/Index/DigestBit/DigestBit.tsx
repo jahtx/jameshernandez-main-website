@@ -14,7 +14,7 @@ const DigestBit = () => {
               quality: 85
               placeholder: BLURRED
               formats: [WEBP]
-              height: 260
+              height: 270
               transformOptions: { fit: CONTAIN, cropFocus: CENTER }
             )
           }
@@ -23,7 +23,7 @@ const DigestBit = () => {
     `
   );
   return (
-    <div className="digestBit text-light">
+    <div id="cv" className="digestBit text-light">
       <div className="trans-2sec" data-sal="fade" data-sal-easing="ease">
         <h2 className="text-center t-block pt-3 one-pt-8-rem">CV</h2>
         <Container>
