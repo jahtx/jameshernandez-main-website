@@ -25,7 +25,11 @@ const TagBit = () => {
   return (
     <section className="tagBit">
       <Container className="crate d-flex">
-        <div className="crate__first d-flex justify-content-center">
+        <div
+          className="crate__first d-flex justify-content-center trans-2sec"
+          data-sal="slide-down"
+          // data-sal-easing="ease"
+        >
           <GatsbyImage
             className="nameTagImg"
             image={getImage(data.nameTagImg)}

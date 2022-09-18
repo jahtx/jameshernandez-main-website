@@ -8,7 +8,9 @@
   }
   #southTejasLogo {
     width: 100%;
+    background-color: black;
     max-width: 390px;
+    z-index: 3;
     display: block;
     @include MQ(S) {
       display: none;
