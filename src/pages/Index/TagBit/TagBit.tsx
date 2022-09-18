@@ -33,7 +33,7 @@ const TagBit = () => {
           <GatsbyImage
             className="nameTagImg"
             image={getImage(data.nameTagImg)}
-            alt="Name Tag"
+            alt="James Hernandez, User Experience Designer and Front-end Developer"
           />
         </div>
         <div className="crate__second d-flex text-light justify-content-center align-items-center">
