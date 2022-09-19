@@ -28,7 +28,6 @@ const TagBit = () => {
         <div
           className="crate__first d-flex justify-content-center trans-2sec"
           data-sal="slide-down"
-          // data-sal-easing="ease"
         >
           <GatsbyImage
             className="nameTagImg"
