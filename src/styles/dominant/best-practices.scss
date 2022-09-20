@@ -12,22 +12,6 @@ h4,
 h5 {
   font-family: $standard-heading;
 }
-h1 {
-  font-size: 1.5rem;
-  margin: 1em 0 0.2em 0;
-}
-h2,
-h3 {
-  font-size: 1.4rem;
-}
-h4 {
-  font-size: 1.3rem;
-  line-height: 1.7rem;
-  margin: 1.7rem 0 0.9rem 0;
-}
-h5 {
-  font-size: 1.1rem;
-}
 
 .no-break {
   white-space: pre;
@@ -40,10 +24,6 @@ h5 {
   }
 }
 
-.tall-line-bullets {
-  line-height: 2rem;
-}
-
 ol.breadcrumb {
   background-color: transparent;
   margin: 0;
@@ -51,16 +31,6 @@ ol.breadcrumb {
 }
 .border-grey {
   border-color: #cccccc;
-}
-
-.btn-primary {
-  // background-color: #2b89d5;
-  .dark {
-    color: black;
-  }
-}
-.btn-primary:hover {
-  background-color: #2477bb;
 }
 
 .one-pt-8-rem {
@@ -92,14 +62,6 @@ ol.breadcrumb {
 }
 .pt-6-rem {
   font-size: 0.6rem;
-}
-
-.line-height-25 {
-  line-height: 2.5rem;
-}
-
-.m-auto {
-  margin: auto;
 }
 
 a {
