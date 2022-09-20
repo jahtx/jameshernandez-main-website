@@ -1,11 +1,11 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import MainLayout from "../layouts/MainLayout";
-import TagBit from "./Index/TagBit";
-import PackBit from "./Index/PackBit";
-import AnthologyBit from "./Index/AnthologyBit";
-import DigestBit from "./Index/DigestBit";
-import ContactBit from "./Index/ContactBit";
+import TagBit from "../components/Index/TagBit";
+import PackBit from "../components/Index/PackBit";
+import AnthologyBit from "../components/Index/AnthologyBit";
+import DigestBit from "../components/Index/DigestBit";
+import ContactBit from "../components/Index/ContactBit";
 import "../styles/index.scss";
 
 const IndexPage = () => {
