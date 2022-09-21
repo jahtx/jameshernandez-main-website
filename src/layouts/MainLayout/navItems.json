@@ -2,18 +2,18 @@
   "navItems": [
     {
       "linkName": "Portfolio",
-      "url": "#portfolio",
+      "url": "/#portfolio",
       "ariaLabel": "synopsis of portfolio and link to all items"
     },
     {
       "linkName": "Curriculum Vitae",
-      "url": "#cv",
+      "url": "/#cv",
       "ariaLabel": "curriculum vitae"
     },
 
     {
       "linkName": "Contact",
-      "url": "#contact",
+      "url": "/#contact",
       "ariaLabel": "if you really do need to contact me"
     }
   ]

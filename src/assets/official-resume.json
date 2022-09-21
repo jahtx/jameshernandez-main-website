@@ -1,0 +1,186 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "James A. Hernandez",
+    "label": "User Experience Designer",
+    "image": "",
+    "email": "social@jahtx.com",
+    "phone": "",
+    "url": "https://jameshernandez.dev",
+    "summary": "Intuitive developer and designer for mobile and desktop web applications. Application of new development tools, services, and methodologies. Dedicated team contributor and coordinator. Explores and analyzes industry best practices for user experience and front-end development. 10+ years of development experience and 6+ years of experience with direct-to-consumer products.",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "coreStrengths": [
+      "User Interface/User Experience Design",
+      "Front-end Development with React and Angular",
+      "Rapid prototyping",
+      "Product Strategy and Planning"
+    ],
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jameshernandez",
+        "url": "https://www.linkedin.com/in/jameshernandez/"
+      },
+      {
+        "network": "Twitter",
+        "username": "hernandezjames",
+        "url": "https://twitter.com/hernandezjames"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Insight Global",
+      "position": "Frontend Developer/Designer",
+      "startDate": "2018-09-30",
+      "endDate": "2020-10-31",
+      "highlights": [],
+      "summary": "Adapting and developing for a Department. of Education web and mobile based application for students to manage student loan information. Collaborating with User Experience to design, prototype, and implement comprehensive page flows for loan simulations and applying for loan forgiveness.",
+      "url": "https://www.linkedin.com/company/insight-global/",
+      "location": "San Antonio, Texas Area"
+    },
+    {
+      "name": "Ampcus Inc",
+      "position": "User Experience Designer, Front-end Engineer",
+      "startDate": "2016-12-31",
+      "endDate": "2017-12-31",
+      "highlights": [],
+      "summary": "Lead UX designer and front-end developer for $2M+ effort to redesign and recode the primary website for Randolph-Brooks Federal Credit Union (RBFCU). Analyzed site and information architecture and metrics to prioritize page replacement and assess suitability. Formulated design strategy by incorporating user experience mapping, mood boards, information architecture planning, and content management practices. Created paper, digital, and interactive wireframes, and code for demonstration and application. Presented findings and recommendations to executive team. Incorporated component-based development structure for repetitive use. Created standards, processes, and procedures for web development and integration with a new Content Management System (CMS).\n\n- Coded primary website layout and responsive templates in HTML, CSS, and JavaScript for use across all products and lines of business\n- Integrated and tested mobile menu, login functionality, and navigation code for multiple device platforms\n- Recommended and instituted BEM methodology for CSS code organization and maintenance \n- Set up and coordinated Windows/Mac team environments with SASS, Bower, NPM, and Git integration",
+      "url": "",
+      "location": "San Antonio, Texas Area"
+    },
+    {
+      "name": "Visage Collaborative, Inc.",
+      "position": "Founding User Experience Designer and Developer",
+      "startDate": "2014-12-31",
+      "endDate": "2015-12-31",
+      "highlights": [],
+      "summary": "Contributor for business development and strategic planning. Provided expertise to clients on product planning, promotion, development, and risk assessment. Developed WordPress and SharePoint customizations. Devised solutions internally for Customer Relationship Management (CRM), project management, time reporting, and accounting. Reduced exposure by constructing contracts with specific requirements, service level agreements, metrics, benchmarks, and terms of separation.\n\n- Created wireframes, site maps, and fluid designs for web and mobile apps\n- Developed custom HTML, CSS, and JavaScript for internal and client projects\n- Managed servers-side development and deployment on Linux/Windows Server instances with cloud services provided by AWS, Azure, Digital Ocean, and WPEngine",
+      "url": "",
+      "location": "San Antonio, Texas Area"
+    },
+    {
+      "name": "USAA",
+      "position": "Creative Designer I",
+      "startDate": "2010-12-31",
+      "endDate": "2014-12-31",
+      "highlights": [],
+      "summary": "Designer and developer for ArcGIS application correlating members' homes with area-mapping capabilities. Primary designer and front-end developer for USAA's internal Enterprise Correspondence Tool (ECT) to facilitate member communication by postal and digital channels. Developed and deployed A/B tests with SiteSpect. USAA mobile app wireframing and mobile web front-end development. Designed and worked with development on address change process for members. \n\n- Developed desktop and mobile web pages with responsive, fluid design\n- Integrated Software-as-a-Service (SaaS) vendor code into custom HTML, CSS\n- Created and documented information architecture and interaction design through UML\n- Advocated and applied accessibility standards for members/users with special needs",
+      "url": "https://www.linkedin.com/company/usaa/",
+      "location": "San Antonio, Texas Area"
+    },
+    {
+      "name": "Peyton Resource Group",
+      "position": "User Interface Designer I",
+      "startDate": "2007-12-31",
+      "endDate": "2008-12-31",
+      "highlights": [],
+      "summary": "Coordinated with business and development to develop application flows for auto and property insurance claims. Appropriated interaction design language to document page flows and information architecture. Developed and presented full-featured content models for agile and waterfall teams to assess project expectations and integrate with JSPs. Modified code for facilitation with Presentation Services, an internal MVC Java framework.\n\n- Applied HTML and CSS best practices to facilitate reuse\n- Incorporated JavaScript libraries including YUI and JQuery as needed and required\n- Proposed and contributed additions and refinements to client pattern library",
+      "url": "",
+      "location": "San Antonio, Texas Area"
+    },
+    {
+      "name": "Accenture",
+      "position": "Web Developer, Consultant",
+      "startDate": "1997-12-31",
+      "endDate": "2005-12-31",
+      "highlights": [],
+      "summary": "Designed and co-developed $800k+ web-based Enterprise Resource Planning application for a European telecom company. Created investment qualifier tools for financial teams. Provided internal training for online course development and document-sharing and retention apps. Graphic designer for executive summaries, marketing brochures, event banners, and internal communications. Managed contractors and project budgets.\n\n- Drew-up and integrated client interfaces with Learning Management Systems (LMSs) including SumTotal\n- Constructed Lotus Notes-based application for teams to track SCRUM-based course development and Subject Matter Expert (SME) consultations",
+      "url": "https://www.linkedin.com/company/accenture/",
+      "location": "Dallas/Fort Worth Area"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Texas State University",
+      "area": "",
+      "studyType": "",
+      "startDate": "1992-12-31",
+      "endDate": "1997-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "User Interface",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "XHTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "USAA",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Usability",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface Design",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "óscar gutiérrez jr.",
+      "reference": "James was valued as a user interface designer at USAA.  He was constantly researching best design and development practices in XHTML, CSS, and JavaScript.  He would frequently skip lunch to read books such as PPK on JavaScript, among others.  James will be missed."
+    }
+  ],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
