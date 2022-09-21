@@ -1,0 +1,12 @@
+@import "../styles/dominant/breakpoints.scss";
+
+.resumePage {
+  h3 {
+    font-size: 1.2rem;
+  }
+  width: 100%;
+  @include MQ(L) {
+    width: 70%;
+    padding: 0 1%;
+  }
+}

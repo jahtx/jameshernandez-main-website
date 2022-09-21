@@ -1,6 +1,7 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import MainLayout from "../layouts/MainLayout";
+import $ from "jquery";
 import TagBit from "../components/Index/TagBit";
 import PackBit from "../components/Index/PackBit";
 import AnthologyBit from "../components/Index/AnthologyBit";
