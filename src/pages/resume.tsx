@@ -26,14 +26,24 @@ const resumePage = () => {
         <div>
           {resumeData.work &&
             resumeData.work.map((workItem) => {
-              const { summary, clients, name, position, technologies } =
-                workItem;
+              const {
+                summary,
+                clients,
+                name,
+                position,
+                technologies,
+                startDateClean,
+                endDateClean,
+              } = workItem;
               const id = nanoid();
 
               return (
                 <div key={id} className="job mt-3">
                   <h3>{position}</h3>
-                  <h4>{name}</h4>
+
+                  <h4 className="clean">
+                    {name} &nbsp;({startDateClean} - {endDateClean})
+                  </h4>
                   <div>
                     {clients ? null : (
                       <>
@@ -53,7 +63,7 @@ const resumePage = () => {
                         const id = nanoid();
                         return (
                           <div className="clientSection" key={id}>
-                            <h4>Client: {name}</h4>
+                            <h5>Client: {name}</h5>
                             <div>{summary}</div>
                             {technologies && (
                               <TechUsed technologies={technologies} />
@@ -66,22 +76,28 @@ const resumePage = () => {
               );
             })}
         </div>
-        <h4>Operating Systems & Applications</h4>
-        <ul>
-          {resumeData.basics.operatingSystems &&
-            resumeData.basics.operatingSystems.map((app) => {
-              const id = nanoid();
-              return <li key={id}>{app}</li>;
-            })}
-        </ul>
-        <h4>Languages and Technologies</h4>
-        <ul>
-          {resumeData.basics.languagesAndTech &&
-            resumeData.basics.languagesAndTech.map((tech) => {
-              const id = nanoid();
-              return <li key={id}>{tech}</li>;
-            })}
-        </ul>
+        <div className="listSection d-flex">
+          <div className="listSection__box">
+            <h4>Operating Systems & Applications</h4>
+            <ul>
+              {resumeData.basics.operatingSystems &&
+                resumeData.basics.operatingSystems.map((app) => {
+                  const id = nanoid();
+                  return <li key={id}>{app}</li>;
+                })}
+            </ul>
+          </div>
+          <div className="listSection__box">
+            <h4>Languages and Technologies</h4>
+            <ul>
+              {resumeData.basics.languagesAndTech &&
+                resumeData.basics.languagesAndTech.map((tech) => {
+                  const id = nanoid();
+                  return <li key={id}>{tech}</li>;
+                })}
+            </ul>
+          </div>
+        </div>
       </Container>
     </MainLayout>
   );
