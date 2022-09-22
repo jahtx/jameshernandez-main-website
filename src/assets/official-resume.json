@@ -18,6 +18,26 @@
       "Rapid prototyping",
       "Product Strategy and Planning"
     ],
+    "operatingSystems": [
+      "UNIX/Linux",
+      "MacOS/Windows",
+      "Photoshop/Illustrator CC",
+      "Sketch",
+      "Figma",
+      "Invision",
+      "Axure",
+      "SiteSpect"
+    ],
+    "languagesAndTech": [
+      "Angular 2",
+      "React / Redux",
+      "HTML5 / CSS3",
+      "SASS",
+      "JavaScript",
+      "JQuery",
+      "Git",
+      "Docker"
+    ],
     "profiles": [
       {
         "network": "LinkedIn",
