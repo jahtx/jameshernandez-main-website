@@ -9,4 +9,14 @@
     width: 70%;
     padding: 0 1%;
   }
+  h4 {
+    font-size: 1.1rem;
+  }
+  .clientSection {
+    padding-bottom: 1rem;
+    &:not(:first-child) {
+      border-top: 1px solid grey;
+      padding-top: 1rem;
+    }
+  }
 }

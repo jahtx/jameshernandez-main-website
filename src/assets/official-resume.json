@@ -31,6 +31,7 @@
       }
     ]
   },
+
   "work": [
     {
       "name": "Insight Global",
@@ -40,7 +41,27 @@
       "highlights": [],
       "summary": "Adapting and developing for a Department. of Education web and mobile based application for students to manage student loan information. Collaborating with User Experience to design, prototype, and implement comprehensive page flows for loan simulations and applying for loan forgiveness.",
       "url": "https://www.linkedin.com/company/insight-global/",
-      "location": "San Antonio, Texas Area"
+      "location": "San Antonio, Texas Area",
+      "clients": [
+        {
+          "name": "Accenture / U.S. Department of Education",
+          "summary": "Front-end engineer and designer on a development team for the U.S. Department of Education Student Loans web application. The browser client required Angular 2 and Bootstrap integration while the backend used Java/Spring and Oracle. Augmented and implemented designs from UX teams for mobile and desktop screens. Incorporated REST APIs using RX.js. Experience with SCRUM Agile methodologies utilizing daily stand-ups on 4-week sprints.",
+          "technologies": ["Angular", "RXJS", "Gitlab", "SASS", "HTML5", "CSS3"]
+        },
+
+        {
+          "name": "Diligent Consulting / U.S. Air Force",
+          "summary": "The client had previously developed a custom application for the U.S. Air Force to manage promotions using an outdated browser plug-in (Silverlight). Requisition of a new version, built using HTML5 and a modern web framework, required our team to enhance the user experience and functionality of the application while maintaining previous requirements and capability. Enhanced the user interface with industry standard components and developed in React/Redux and chief administrator for version control/Git best practices.",
+          "technologies": [
+            "React",
+            "Redux",
+            "Bootstrap",
+            "SASS",
+            "HTML5",
+            "CSS3"
+          ]
+        }
+      ]
     },
     {
       "name": "Ampcus Inc",
