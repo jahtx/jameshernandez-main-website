@@ -69,9 +69,16 @@
       "startDate": "2016-12-31",
       "endDate": "2017-12-31",
       "highlights": [],
-      "summary": "Lead UX designer and front-end developer for $2M+ effort to redesign and recode the primary website for Randolph-Brooks Federal Credit Union (RBFCU). Analyzed site and information architecture and metrics to prioritize page replacement and assess suitability. Formulated design strategy by incorporating user experience mapping, mood boards, information architecture planning, and content management practices. Created paper, digital, and interactive wireframes, and code for demonstration and application. Presented findings and recommendations to executive team. Incorporated component-based development structure for repetitive use. Created standards, processes, and procedures for web development and integration with a new Content Management System (CMS).\n\n- Coded primary website layout and responsive templates in HTML, CSS, and JavaScript for use across all products and lines of business\n- Integrated and tested mobile menu, login functionality, and navigation code for multiple device platforms\n- Recommended and instituted BEM methodology for CSS code organization and maintenance \n- Set up and coordinated Windows/Mac team environments with SASS, Bower, NPM, and Git integration",
+      "summary": "Led a full user-experience design process from requirements gathering to implementation. Fully researched metrics, products, and content then prioritized according to user engagement, surveys, and executive initiatives. Created wireframes for user testing/evaluation and final composites of all major landing pages. Structured code environment and templating system incorporating modern-SASS/JavaScript libraries and frameworks. Operated as senior front-end developer and designer.",
       "url": "",
-      "location": "San Antonio, Texas Area"
+      "location": "San Antonio, Texas Area",
+      "clients": [
+        {
+          "name": "Randolph-Brooks Federal Credit Union",
+          "summary": "Led a full user-experience design process from requirements gathering to implementation. Fully researched metrics, products, and content then prioritized according to user engagement, surveys, and executive initiatives. Created wireframes for user testing/evaluation and final composites of all major landing pages. Structured code environment and templating system incorporating modern-SASS/JavaScript libraries and frameworks. Operated as senior front-end developer and designer.",
+          "technologies": ["AngularJS", "JQuery", "SASS", "HTML5", "CSS3"]
+        }
+      ]
     },
     {
       "name": "Visage Collaborative, Inc.",
@@ -79,9 +86,10 @@
       "startDate": "2014-12-31",
       "endDate": "2015-12-31",
       "highlights": [],
-      "summary": "Contributor for business development and strategic planning. Provided expertise to clients on product planning, promotion, development, and risk assessment. Developed WordPress and SharePoint customizations. Devised solutions internally for Customer Relationship Management (CRM), project management, time reporting, and accounting. Reduced exposure by constructing contracts with specific requirements, service level agreements, metrics, benchmarks, and terms of separation.\n\n- Created wireframes, site maps, and fluid designs for web and mobile apps\n- Developed custom HTML, CSS, and JavaScript for internal and client projects\n- Managed servers-side development and deployment on Linux/Windows Server instances with cloud services provided by AWS, Azure, Digital Ocean, and WPEngine",
+      "summary": "As a small team of entrepreneurs motivated to innovate for our clients, all of us assumed multiple roles and responsibilities for a new business. Guided the design process for our early clients and development teams. Project manager and lead developer for web application products and other deliverables. Managed AWS/Azure hosting production environments. Advocated our business towards more profitable and sustainable projects. Sales and engagement lead for new clients. Business process manager for employee/contractor utilization and accounting.",
       "url": "",
-      "location": "San Antonio, Texas Area"
+      "location": "San Antonio, Texas Area",
+      "technologies": ["WordPress", "Linux"]
     },
     {
       "name": "USAA",
@@ -89,29 +97,10 @@
       "startDate": "2010-12-31",
       "endDate": "2014-12-31",
       "highlights": [],
-      "summary": "Designer and developer for ArcGIS application correlating members' homes with area-mapping capabilities. Primary designer and front-end developer for USAA's internal Enterprise Correspondence Tool (ECT) to facilitate member communication by postal and digital channels. Developed and deployed A/B tests with SiteSpect. USAA mobile app wireframing and mobile web front-end development. Designed and worked with development on address change process for members. \n\n- Developed desktop and mobile web pages with responsive, fluid design\n- Integrated Software-as-a-Service (SaaS) vendor code into custom HTML, CSS\n- Created and documented information architecture and interaction design through UML\n- Advocated and applied accessibility standards for members/users with special needs",
+      "summary": "Executed design process for multiple web and mobile projects including USAA’s internal Enterprise Correspondence Tool, a web application to facilitate member communication through postal and digital channels. Engineered HTML/CSS/JavaScript functional wireframing and pair programmed with Java development team. Mobile app wireframing and front-end development. Programmed and applied A/B testing.",
       "url": "https://www.linkedin.com/company/usaa/",
-      "location": "San Antonio, Texas Area"
-    },
-    {
-      "name": "Peyton Resource Group",
-      "position": "User Interface Designer I",
-      "startDate": "2007-12-31",
-      "endDate": "2008-12-31",
-      "highlights": [],
-      "summary": "Coordinated with business and development to develop application flows for auto and property insurance claims. Appropriated interaction design language to document page flows and information architecture. Developed and presented full-featured content models for agile and waterfall teams to assess project expectations and integrate with JSPs. Modified code for facilitation with Presentation Services, an internal MVC Java framework.\n\n- Applied HTML and CSS best practices to facilitate reuse\n- Incorporated JavaScript libraries including YUI and JQuery as needed and required\n- Proposed and contributed additions and refinements to client pattern library",
-      "url": "",
-      "location": "San Antonio, Texas Area"
-    },
-    {
-      "name": "Accenture",
-      "position": "Web Developer, Consultant",
-      "startDate": "1997-12-31",
-      "endDate": "2005-12-31",
-      "highlights": [],
-      "summary": "Designed and co-developed $800k+ web-based Enterprise Resource Planning application for a European telecom company. Created investment qualifier tools for financial teams. Provided internal training for online course development and document-sharing and retention apps. Graphic designer for executive summaries, marketing brochures, event banners, and internal communications. Managed contractors and project budgets.\n\n- Drew-up and integrated client interfaces with Learning Management Systems (LMSs) including SumTotal\n- Constructed Lotus Notes-based application for teams to track SCRUM-based course development and Subject Matter Expert (SME) consultations",
-      "url": "https://www.linkedin.com/company/accenture/",
-      "location": "Dallas/Fort Worth Area"
+      "location": "San Antonio, Texas Area",
+      "technologies": ["YUI", "JavaScript", "HTML5", "CSS3"]
     }
   ],
   "volunteer": [],

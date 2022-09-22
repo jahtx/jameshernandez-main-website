@@ -10,7 +10,7 @@ const resumePage = () => {
   const resumeData = resumeFile;
   return (
     <MainLayout>
-      <Container className="resumePage pt-9-rem">
+      <Container className="resumePage pt-9-rem mb-5">
         <div className="mt-4 mb-4">
           <h2>{resumeData.basics.label}</h2>
           {resumeData.basics.summary}
@@ -25,12 +25,21 @@ const resumePage = () => {
         <h2>Experience</h2>
         {resumeData.work &&
           resumeData.work.map((workItem) => {
-            const { summary, clients, name } = workItem;
+            const { summary, clients, name, technologies } = workItem;
             const id = nanoid();
+
             return (
               <div key={id} className="mt-3">
                 <h3>{name}</h3>
-                <div> {clients ? null : summary}</div>
+                <div>
+                  {clients ? null : (
+                    <>
+                      {summary}
+                      <br />
+                      {technologies && <TechUsed technologies={technologies} />}
+                    </>
+                  )}
+                </div>
                 <div>
                   {clients &&
                     clients.map((client) => {
