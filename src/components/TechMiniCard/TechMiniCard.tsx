@@ -192,6 +192,17 @@ const TechMiniCard = ({ tech }) => {
             )
           }
         }
+        typescriptLogo: file(relativePath: { eq: "dev-logos/typescript.png" }) {
+          childImageSharp {
+            gatsbyImageData(
+              quality: 85
+              width: 28
+              placeholder: BLURRED
+              formats: [WEBP]
+              layout: CONSTRAINED
+            )
+          }
+        }
         whammyDude: file(relativePath: { eq: "whammy.png" }) {
           childImageSharp {
             gatsbyImageData(
@@ -222,6 +233,7 @@ const TechMiniCard = ({ tech }) => {
   const jsLogo = data.jsLogo;
   const graphqlLogo = data.graphqlLogo;
   const yuiLogo = data.yuiLogo;
+  const typescriptLogo = data.typescriptLogo;
   const whammyDude = data.whammyDude;
 
   const renderSwitch = (param) => {
@@ -323,6 +335,12 @@ const TechMiniCard = ({ tech }) => {
           image: yuiLogo,
           weblink: "https://clarle.github.io/yui3/",
           altText: "YUI Library",
+        };
+      case "TypeScript":
+        return {
+          image: typescriptLogo,
+          weblink: "https://www.typescriptlang.org/",
+          altText: "TypeScript",
         };
       default:
         return {

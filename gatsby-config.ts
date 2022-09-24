@@ -36,6 +36,7 @@ const config: GatsbyConfig = {
           `Roboto Slab`,
           `Roboto Flex`,
           `Roboto Serif`,
+          `Open Sans`,
         ],
         display: "swap",
       },

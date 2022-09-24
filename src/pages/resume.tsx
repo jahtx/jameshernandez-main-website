@@ -1,5 +1,6 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
+import type { HeadFC } from "gatsby";
 import TechUsed from "../components/TechUsed";
 import resumeFile from "../assets/official-resume.json";
 import MainLayout from "../layouts/MainLayout";
@@ -103,3 +104,22 @@ const resumePage = () => {
   );
 };
 export default resumePage;
+
+export const Head: HeadFC = () => (
+  <>
+    <meta charSet="UTF-8" />
+    <meta httpEquiv="cache-control" content="no-cache" />
+    <meta
+      name="description"
+      content="a user experience and web development business in San Antonio, Austin"
+    />
+    <meta
+      name="keywords"
+      content="design, user experience, developer, react, redux"
+    />
+    <meta name="author" content="James Hernandez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>South Tejas Design</title>
+  </>
+);
