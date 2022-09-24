@@ -64,7 +64,16 @@
       "summary": "Senior developer on an agile team creating a web-based application to display paths on a global map based on satellite data. New interfaces were created to turn on/off specific satellites, weather maps, hide/show paths and save locations. Developed modular, React-based TypeScript utilizing REST and socket.io APIs and customizing design and styling with Sketch, Illustrator, and developing in SASS and HTML5.",
       "url": "https://www.linkedin.com/company/insight-global/",
       "location": "San Antonio, Texas Area",
-      "technologies": ["React", "Redux", "TypeScript", "SASS", "HTML5", "CSS3"]
+      "technologies": [
+        "React",
+        "Redux",
+        "TypeScript",
+        "Docker",
+        "Cesium",
+        "SASS",
+        "HTML5",
+        "CSS3"
+      ]
     },
     {
       "name": "Insight Global",

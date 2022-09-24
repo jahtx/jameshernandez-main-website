@@ -7,9 +7,15 @@ import "./TitleBit.scss";
 const TitleBit = () => {
   return (
     <div id="home" className="titleBit d-flex justify-content-center">
-      <h1 className="d-flex justify-content-center m-0">
-        <JamesHernandezLogo />
-        <JamesHernandezLogoDesktop />
+      <h1 className="m-0 p-0">
+        <a
+          href="/"
+          aira-label="go back to home page"
+          className="d-flex justify-content-center m-0 p-0"
+        >
+          <JamesHernandezLogo />
+          <JamesHernandezLogoDesktop />
+        </a>
       </h1>
     </div>
   );

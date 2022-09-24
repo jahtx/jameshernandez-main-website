@@ -48,8 +48,7 @@ const resumePage = () => {
                   <div>
                     {clients ? null : (
                       <>
-                        {summary}
-                        <br />
+                        <p>{summary}</p>
                         {technologies && (
                           <TechUsed technologies={technologies} />
                         )}
@@ -65,7 +64,7 @@ const resumePage = () => {
                         return (
                           <div className="clientSection" key={id}>
                             <h5>Client: {name}</h5>
-                            <div>{summary}</div>
+                            <p>{summary}</p>
                             {technologies && (
                               <TechUsed technologies={technologies} />
                             )}

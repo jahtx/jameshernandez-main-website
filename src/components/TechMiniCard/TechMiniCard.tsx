@@ -196,7 +196,29 @@ const TechMiniCard = ({ tech }) => {
           childImageSharp {
             gatsbyImageData(
               quality: 85
-              width: 28
+              width: 31
+              placeholder: BLURRED
+              formats: [WEBP]
+              layout: CONSTRAINED
+            )
+          }
+        }
+        dockerLogo: file(relativePath: { eq: "dev-logos/docker-logo.png" }) {
+          childImageSharp {
+            gatsbyImageData(
+              quality: 85
+              width: 31
+              placeholder: BLURRED
+              formats: [WEBP]
+              layout: CONSTRAINED
+            )
+          }
+        }
+        cesiumLogo: file(relativePath: { eq: "dev-logos/cesium-logo.png" }) {
+          childImageSharp {
+            gatsbyImageData(
+              quality: 85
+              width: 31
               placeholder: BLURRED
               formats: [WEBP]
               layout: CONSTRAINED
@@ -234,6 +256,8 @@ const TechMiniCard = ({ tech }) => {
   const graphqlLogo = data.graphqlLogo;
   const yuiLogo = data.yuiLogo;
   const typescriptLogo = data.typescriptLogo;
+  const dockerLogo = data.dockerLogo;
+  const cesiumLogo = data.cesiumLogo;
   const whammyDude = data.whammyDude;
 
   const renderSwitch = (param) => {
@@ -341,6 +365,18 @@ const TechMiniCard = ({ tech }) => {
           image: typescriptLogo,
           weblink: "https://www.typescriptlang.org/",
           altText: "TypeScript",
+        };
+      case "Docker":
+        return {
+          image: dockerLogo,
+          weblink: "https://www.ibm.com/cloud/learn/docker",
+          altText: "Docker",
+        };
+      case "Cesium":
+        return {
+          image: cesiumLogo,
+          weblink: "https://cesium.com/",
+          altText: "Cesium",
         };
       default:
         return {
