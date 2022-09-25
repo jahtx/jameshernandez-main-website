@@ -1,17 +1,23 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import type { HeadFC } from "gatsby";
-import MainLayout from "../layouts/MainLayout";
 import $ from "jquery";
+import MainLayout from "../layouts/MainLayout";
 import TagBit from "../components/Index/TagBit";
 import PackBit from "../components/Index/PackBit";
 import AnthologyBit from "../components/Index/AnthologyBit";
 import DigestBit from "../components/Index/DigestBit";
 import ContactBit from "../components/Index/ContactBit";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+
 import "../styles/index.scss";
 
 const IndexPage = () => {
+  useEffect(() => {
+    console.log("location ", location);
+  });
   return (
     <MainLayout>
+      <ScrollToTop />
       <TagBit />
       <PackBit />
       <AnthologyBit />

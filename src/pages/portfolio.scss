@@ -1,5 +1,71 @@
-.redbox {
-  height: 100px;
-  width: 100px;
-  background-color: red;
+@import "../styles/dominant/breakpoints.scss";
+@import "../styles/variables/fonts-and-colors.scss";
+
+.hyperBoxContainer {
+  flex-direction: column;
+  justify-content: left;
+  @include MQ(S) {
+    flex-direction: row;
+  }
+}
+
+$box-size: 18rem;
+.hyperBoxOuter {
+  justify-content: center;
+  transition: top ease 0.3s;
+  &:hover .hyperBox {
+    box-shadow: 0 10px 13px #a3a3a3;
+    top: -5px;
+    transition: top ease 0.3s;
+  }
+}
+
+.hyperBox-child:not(:first-child) {
+  margin-top: 1rem;
+  @include MQ(S) {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
+
+.hyperBox {
+  border-radius: $fav_radius;
+  height: $box-size;
+  width: $box-size;
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  h2 {
+    text-transform: uppercase;
+  }
+  &--rbfcu {
+    background-color: $rbfcu_color;
+    background-image: url("../images/back/rbfcu-trans-white-bk.png");
+    background-size: 270px;
+    background-position: center;
+    :hover {
+      color: white;
+    }
+  }
+  &--usaaGeo {
+    background-color: #f8f8f8;
+    background-image: url("../images/back/usaa-grey-bk.png");
+    background-size: 320px;
+    background-position: center;
+    border: 1px solid #cecece;
+    color: black;
+    &:hover {
+      color: black;
+    }
+    :hover {
+      color: black;
+    }
+    a {
+      color: black;
+      :hover {
+        color: black;
+      }
+    }
+  }
 }
