@@ -12,12 +12,9 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import "../styles/index.scss";
 
 const IndexPage = () => {
-  useEffect(() => {
-    console.log("location ", location);
-  });
   return (
     <MainLayout>
-      <ScrollToTop />
+      <ScrollToTop location={location} />
       <TagBit />
       <PackBit />
       <AnthologyBit />
