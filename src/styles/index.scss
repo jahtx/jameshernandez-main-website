@@ -19,3 +19,7 @@ body {
 .sectionHeading {
   @include section-head;
 }
+
+.breadcrumb-item {
+  font-size: 1rem;
+}

@@ -1,5 +1,6 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 import type { HeadFC } from "gatsby";
 import TechUsed from "../components/TechUsed";
 import resumeFile from "../assets/official-resume.json";
@@ -12,7 +13,11 @@ const resumePage = () => {
   return (
     <MainLayout>
       <Container className="resumePage pt-9-rem mb-5">
-        <div className="mt-4 mb-4">
+        <Breadcrumb>
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Résumé</Breadcrumb.Item>
+        </Breadcrumb>
+        <div className="mt-2 mb-4">
           <h2>{resumeData.basics.label}</h2>
           {resumeData.basics.summary}
         </div>

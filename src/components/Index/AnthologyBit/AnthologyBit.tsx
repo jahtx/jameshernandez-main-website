@@ -2,7 +2,7 @@ import * as React from "react";
 import Container from "react-bootstrap/Container";
 import "./AnthologyBit.scss";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 
 const AnthologyBit = () => {
   const data = useStaticQuery(
@@ -46,6 +46,13 @@ const AnthologyBit = () => {
                 facilisis sem, dapibus volutpat nibh. Donec id odio arcu. Nam
                 ornare gravida rutrum. Nam vel molestie quam.
               </p>
+              <Link
+                to="/portfolio"
+                className="btn btn btn-light w-100"
+                role="button"
+              >
+                Read More
+              </Link>
             </div>
           </div>
         </Container>
