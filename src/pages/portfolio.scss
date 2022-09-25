@@ -3,7 +3,6 @@
 
 .hyperBoxContainer {
   flex-direction: column;
-  justify-content: left;
   @include MQ(S) {
     flex-direction: row;
   }
@@ -11,7 +10,6 @@
 
 $box-size: 18rem;
 .hyperBoxOuter {
-  justify-content: center;
   transition: top ease 0.3s;
   &:hover .hyperBox {
     box-shadow: 0 10px 13px #a3a3a3;
@@ -32,7 +30,6 @@ $box-size: 18rem;
   border-radius: $fav_radius;
   height: $box-size;
   width: $box-size;
-  position: relative;
   top: 0;
   box-sizing: border-box;
   background-repeat: no-repeat;

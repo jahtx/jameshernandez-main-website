@@ -21,5 +21,7 @@ body {
 }
 
 .breadcrumb-item {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  //font-family: $breadcrumb-font !important;
+  text-transform: uppercase;
 }

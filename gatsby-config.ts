@@ -37,6 +37,8 @@ const config: GatsbyConfig = {
           `Roboto Flex`,
           `Roboto Serif`,
           `Open Sans`,
+          `Silkscreen`,
+          `Space Grotesk`,
         ],
         display: "swap",
       },

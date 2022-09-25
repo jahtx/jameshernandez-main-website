@@ -7,20 +7,21 @@ import { Link } from "gatsby";
 const portfolioPage = () => {
   return (
     <MainLayout>
-      <Container fluid="lg">
+      <Container className="portfolioPage">
         <Breadcrumb>
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item className="crumb" href="/">
+            Home
+          </Breadcrumb.Item>
           <Breadcrumb.Item active>Portfolio</Breadcrumb.Item>
         </Breadcrumb>
-        {/* <h1 className="m-0 pt-1">Portfolio</h1>
-        <hr className="m-0" /> */}
       </Container>
-      <Container fluid="lg" className="mt-3 d-flex hyperBoxContainer mb-5">
+      <Container className="portfolioPage mt-3 d-flex hyperBoxContainer mb-5">
         <Link to="rbfcu" className="not-underline hyperBox-child">
-          <div className="hyperBoxOuter d-flex">
+          <div className="hyperBoxOuter d-flex justify-content-center">
             <div
               className="hyperBox 
                     hyperBox--rbfcu 
+                    position-relative
                     text-white
                     flex-column
                     d-flex
@@ -41,10 +42,11 @@ const portfolioPage = () => {
           </div>
         </Link>
         <Link to="usaa-geo" className="not-underline hyperBox-child">
-          <div className="hyperBoxOuter d-flex">
+          <div className="hyperBoxOuter d-flex justify-content-center">
             <div
               className="hyperBox 
                     hyperBox--usaaGeo
+                    position-relative
                     text-black
                     flex-column
                     d-flex
