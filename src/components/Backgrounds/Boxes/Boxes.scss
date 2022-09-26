@@ -1,0 +1,21 @@
+// greater specifity overrides crummy
+// bootstrap defaults (div.modalX)
+div.modalMobile {
+  max-width: 300px;
+  margin: 1.75rem auto;
+}
+div.modalDesktop {
+  max-width: 800px;
+  margin: 1.75rem auto;
+}
+
+.spiralBk {
+  padding: 10px 0 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media only screen and (min-width: 825px) {
+    // background-image: url("../../images/backgrounds/spiral-total-bk.png");
+    padding: 20px 0;
+  }
+}

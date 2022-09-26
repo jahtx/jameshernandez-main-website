@@ -1,0 +1,23 @@
+@import "../../styles/dominant/breakpoints.scss";
+
+@mixin comp_border {
+  border: 1px solid #cbcbca;
+
+  height: 300px;
+  cursor: pointer;
+  margin: 0 1.5em;
+  &:hover {
+    box-shadow: 0 0 15px #a3a3a3;
+  }
+}
+.mobThumb {
+  width: 300px;
+  @include comp_border;
+  @include MQ(S) {
+    width: 100px;
+  }
+}
+.deskThumb {
+  max-width: 500px;
+  @include comp_border;
+}
