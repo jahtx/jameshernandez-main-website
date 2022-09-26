@@ -1,0 +1,31 @@
+@import "../../../styles/dominant/breakpoints.scss";
+
+.usaaHeroGradient {
+  margin-top: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 54%,
+    rgba(252, 176, 69, 1) 92%
+  );
+}
+.usaaHeroBack {
+  background-image: url("../../../images/back/white-elevation.png");
+  background-size: 800px;
+  height: 200px;
+  background-repeat: repeat;
+}
+
+.geoLaptop-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  @include MQ(S) {
+    justify-content: left;
+  }
+}
+
+.geoLaptop-image {
+  margin-bottom: 4px;
+}
