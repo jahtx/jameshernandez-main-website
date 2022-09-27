@@ -19,7 +19,7 @@
       "url": "#articles",
       "image": "ipad",
       "imgAlt": "ipad",
-      "lead": "I started with HTML4 and regular CSS, and have evolved my development process to incorporate Node-based libraries and JavaScript frameworks including React and Angular. Tools and libraries should improve the development lifecycle and facilitate the collaboration of teams and stakeholders."
+      "lead": "Much development is now done with frameworks such as React, Angular, and Vue. I prefer using React or React-like frameworks in conjunction with standards-based HTML5 and CSS3. I use REST or socket.io APIs to retreive data from back-end sources."
     }
   ]
 }
