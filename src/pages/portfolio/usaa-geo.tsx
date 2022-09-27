@@ -8,7 +8,7 @@ import "./usaa-geo.scss";
 const USAAGeo = () => {
   return (
     <MainLayout>
-      <Container fluid="lg">
+      <Container>
         <Breadcrumb>
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="/portfolio">Portfolio</Breadcrumb.Item>
