@@ -26,7 +26,13 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-scroll-reveal`,
-
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: ["G-VFZEZQXCGB"],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
