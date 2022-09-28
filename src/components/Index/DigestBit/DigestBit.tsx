@@ -38,23 +38,14 @@ const DigestBit = () => {
             </div>
             <div className="parcel__second">
               <p>
-                Aenean gravida, ligula eget ultricies varius, libero nunc
-                tincidunt eros, id hendrerit tortor diam at leo. Donec iaculis
-                aliquet odio at interdum. Pellentesque lobortis orci felis, nec
-                placerat ante auctor sit amet. Morbi feugiat diam at magna
-                vestibulum, vitae condimentum est auctor.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-                facilisis sem, dapibus volutpat nibh. Donec id odio arcu. Nam
-                ornare gravida rutrum. Nam vel molestie quam.
+                I have created interfaces and developed applications for
+                multiple industries including banking, military, and education.
+                I enjoy improving usability for customers and internal users and
+                applying industry best practices through the entire design and
+                development process.
               </p>
 
-              <Link
-                to="/resume"
-                className="btn btn btn-light w-100"
-                role="button"
-              >
+              <Link className="float-end linkText-white" to="/resume">
                 Read More
               </Link>
             </div>

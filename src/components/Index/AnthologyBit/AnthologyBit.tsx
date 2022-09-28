@@ -37,21 +37,17 @@ const AnthologyBit = () => {
             </div>
             <div className="pack__second p-4">
               <p>
-                Examples of past work and ongoing projects. I like to mettle out
-                the design in Sketch first for initial brainstorming sessions
-                then create HTML/CSS wireframes in either React or Angular.
+                These are examples of past work and some ongoing projects.
+                Ultimately I will be including a wide variety of collateral
+                materials, including wireframes, research examples, and finished
+                prototypes.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-                facilisis sem, dapibus volutpat nibh. Donec id odio arcu. Nam
-                ornare gravida rutrum. Nam vel molestie quam.
+                All of these are created in Sketch, Photoshop, and Illustrator.
               </p>
-              <Link
-                to="/portfolio"
-                className="btn btn btn-light w-100"
-                role="button"
-              >
-                Read More
+
+              <Link className="float-end linkText-white" to="/portfolio">
+                Explore
               </Link>
             </div>
           </div>

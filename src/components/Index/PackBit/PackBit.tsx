@@ -82,8 +82,11 @@ const PackBit = () => {
                 const { articleName, url, lead, image, imgAlt } = article;
                 const id = nanoid();
                 return (
-                  <li key={id} className="docketItem d-inline-block trans-2sec">
-                    <a className="text-dark" href={url}>
+                  <li
+                    key={id}
+                    className="docketItem d-inline-block trans-2sec mt-3"
+                  >
+                    <span className="text-dark">
                       <h3 className="docketItem__title text-center one-pt-3-rem">
                         {articleName}
                       </h3>
@@ -95,7 +98,7 @@ const PackBit = () => {
                         />
                       </div>
                       <div className="docketItem__descrip pt-9-rem">{lead}</div>
-                    </a>
+                    </span>
                   </li>
                 );
               })}

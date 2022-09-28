@@ -72,15 +72,12 @@ a {
   }
 }
 
-.linkText-white {
+a.linkText-white {
   color: white;
-  a {
+  text-decoration: underline;
+  &:hover {
     color: white;
-    text-decoration: underline;
-    :hover {
-      color: white;
-      text-decoration: none;
-    }
+    text-decoration: none;
   }
 }
 
