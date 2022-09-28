@@ -45,7 +45,7 @@ const Nav = () => {
           </h2>
           <ul id="mainList">
             <li>
-              <a href="/" onClick={handleToggle} className="no-break">
+              <a href="/#home" onClick={handleToggle} className="no-break">
                 Home
               </a>
             </li>
