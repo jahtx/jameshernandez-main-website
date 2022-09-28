@@ -13,18 +13,17 @@ import "../styles/index.scss";
 
 const IndexPage = () => {
   let location = typeof window !== "undefined" ? window.location : "";
-  // useEffect(() => {
-  //   console.log("index location ", location);
-  // }, [location]);
   return (
-    <MainLayout>
+    <>
       <ScrollToTop location={location} />
-      <TagBit />
-      <PackBit />
-      <AnthologyBit />
-      <DigestBit />
-      <ContactBit />
-    </MainLayout>
+      <MainLayout>
+        <TagBit />
+        <PackBit />
+        <AnthologyBit />
+        <DigestBit />
+        <ContactBit />
+      </MainLayout>
+    </>
   );
 };
 
