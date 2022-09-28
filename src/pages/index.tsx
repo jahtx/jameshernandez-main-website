@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import type { HeadFC } from "gatsby";
-import $ from "jquery";
+
 import MainLayout from "../layouts/MainLayout";
 import TagBit from "../components/Index/TagBit";
 import PackBit from "../components/Index/PackBit";
@@ -12,11 +12,10 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import "../styles/index.scss";
 
 const IndexPage = () => {
-  let location = typeof window !== "undefined" ? window.location : "";
-
-  useEffect(() => {
-    console.log("index location ", location);
-  }, []);
+  // let location = typeof window !== "undefined" ? window.location : "";
+  // useEffect(() => {
+  //   console.log("index location ", location);
+  // }, [location]);
   return (
     <MainLayout>
       <ScrollToTop location={location} />
