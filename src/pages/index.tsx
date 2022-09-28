@@ -46,6 +46,8 @@ export const Head: HeadFC = () => (
     <meta name="author" content="James Hernandez" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>South Tejas Design</title>
+    <title>
+      James Hernandez &mdash; User Experience Designer, Front-end Engineer
+    </title>
   </>
 );

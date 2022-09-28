@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, HeadFC } from "gatsby";
 import { nanoid } from "nanoid";
 import Container from "react-bootstrap/Container";
 import { getImage } from "gatsby-plugin-image";
@@ -206,3 +206,24 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
+export const Head: HeadFC = () => (
+  <>
+    <meta charSet="UTF-8" />
+    <meta httpEquiv="cache-control" content="no-cache" />
+    <meta
+      name="description"
+      content="a user experience and web development business in the South Texas area"
+    />
+    <meta
+      name="keywords"
+      content="design, user experience, developer, react, redux"
+    />
+    <meta name="author" content="James Hernandez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      James Hernandez &mdash; User Experience Designer, Front-end Engineer
+    </title>
+  </>
+);

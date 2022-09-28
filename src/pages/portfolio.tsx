@@ -1,4 +1,5 @@
 import * as React from "react";
+import type { HeadFC } from "gatsby";
 import Container from "react-bootstrap/Container";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import MainLayout from "../layouts/MainLayout";
@@ -69,3 +70,24 @@ const portfolioPage = () => {
 };
 
 export default portfolioPage;
+
+export const Head: HeadFC = () => (
+  <>
+    <meta charSet="UTF-8" />
+    <meta httpEquiv="cache-control" content="no-cache" />
+    <meta
+      name="description"
+      content="a user experience and web development business in the South Texas area"
+    />
+    <meta
+      name="keywords"
+      content="design, user experience, developer, react, redux"
+    />
+    <meta name="author" content="James Hernandez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      James Hernandez &mdash; User Experience Designer, Front-end Engineer
+    </title>
+  </>
+);

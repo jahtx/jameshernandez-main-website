@@ -115,7 +115,7 @@ export const Head: HeadFC = () => (
     <meta httpEquiv="cache-control" content="no-cache" />
     <meta
       name="description"
-      content="a user experience and web development business in San Antonio, Austin"
+      content="a user experience and web development business in the South Texas area"
     />
     <meta
       name="keywords"
@@ -124,6 +124,8 @@ export const Head: HeadFC = () => (
     <meta name="author" content="James Hernandez" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>South Tejas Design</title>
+    <title>
+      James Hernandez &mdash; User Experience Designer, Front-end Engineer
+    </title>
   </>
 );
