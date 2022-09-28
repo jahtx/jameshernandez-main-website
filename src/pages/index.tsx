@@ -12,7 +12,7 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import "../styles/index.scss";
 
 const IndexPage = () => {
-  // let location = typeof window !== "undefined" ? window.location : "";
+  let location = typeof window !== "undefined" ? window.location : "";
   // useEffect(() => {
   //   console.log("index location ", location);
   // }, [location]);
