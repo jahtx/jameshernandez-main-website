@@ -39,6 +39,7 @@ const config: GatsbyConfig = {
           `Open Sans`,
           `Silkscreen`,
           `Space Grotesk`,
+          `Satisfy`,
         ],
         display: "swap",
       },

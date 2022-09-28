@@ -1,5 +1,5 @@
 @import "../../../styles/dominant/breakpoints.scss";
-//@import "../../../styles/variables/fonts-and-colors.scss";
+@import "../../../styles/variables/fonts-and-colors.scss";
 
 .tagBit {
   background-color: #e84723;
@@ -14,7 +14,8 @@
       flex-direction: row;
     }
     &__heading {
-      font-size: 2rem;
+      font-size: 2.3rem;
+      font-family: $hello-font;
     }
     &__first {
       .nameTagImg {

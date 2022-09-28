@@ -27,7 +27,7 @@ const DigestBit = () => {
   return (
     <div id="cv" className="digestBit text-light">
       <div className="trans-2sec" data-sal="fade" data-sal-easing="ease">
-        <h2 className="text-center t-block pt-3 one-pt-8-rem">CV</h2>
+        <h2 className="text-center t-block pt-3 one-pt-8-rem">Résumé</h2>
         <Container>
           <div className="parcel d-flex pb-3">
             <div className="parcel__first d-flex align-items-center justify-content-center">

@@ -37,12 +37,12 @@ const TagBit = () => {
         </div>
         <div className="crate__second d-flex text-light justify-content-center align-items-center">
           <div className="crate__innerText one-rem m-1">
-            <h2 className="crate__heading text-center">&#xa1;Bienvendas!</h2>
+            <h2 className="crate__heading text-center">Hello!</h2>
             <p>
-              Hi, I'm James, a Product & Services UX Designer and Front-end
-              Engineer in the San Antonio area. I am passionate about solving
-              complex app design problems from conception to deployment to
-              continuous improvement.
+              I'm James Hernandez, a Product & Services UX Designer and
+              Front-end Engineer in the San Antonio area. I am passionate about
+              solving complex app design problems from conception to deployment
+              to continuous improvement.
             </p>
             <p>
               During my career, I have contributed to efforts for web projects
