@@ -1,5 +1,4 @@
-import * as React from "react";
-import $ from "jquery";
+import React, { useState } from "react";
 import navItemsFile from "./navItems.json";
 import { nanoid } from "nanoid";
 import "./Nav.scss";
@@ -12,13 +11,9 @@ type NavItemType = {
 const navItems: Array<NavItemType> = navItemsFile.navItems;
 
 const Nav = () => {
+  const [isActive, setActive] = useState(false);
   const handleToggle = () => {
-    $("#a").toggleClass("a");
-    $("#b").toggleClass("c");
-    $("#c").toggleClass("b");
-    $("#nav").toggleClass("show");
-    $("#under").toggleClass("slide");
-    $("#mainList").toggleClass("show");
+    setActive(!isActive);
   };
   return (
     <>
@@ -33,17 +28,22 @@ const Nav = () => {
           aria-controls="nav"
           onClick={handleToggle}
         >
-          <div className="icon-1" id="a"></div>
-          <div className="icon-2" id="b"></div>
-          <div className="icon-3" id="c"></div>
+          <div className={"icon-1 " + (isActive ? "a" : null)} id="a"></div>
+          <div className={"icon-2 " + (isActive ? "c" : null)} id="b"></div>
+          <div className={"icon-3 " + (isActive ? "b" : null)} id="c"></div>
+
           <div className="clear"></div>
         </button>
 
-        <div id="nav" role="navigation" className="listHolder">
+        <div
+          id="nav"
+          role="navigation"
+          className={"listHolder " + (isActive ? "show" : null)}
+        >
           <h2 id="mainmenulabel" className="sr-only">
             Main Menu
           </h2>
-          <ul id="mainList">
+          <ul id="mainList" className={isActive ? "show" : null}>
             <li>
               <a href="/#home" onClick={handleToggle} className="no-break">
                 Home
@@ -69,7 +69,10 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div className="underBack" id="under"></div>
+        <div
+          className={"underBack " + (isActive ? "slide" : null)}
+          id="under"
+        ></div>
       </nav>
       <nav
         className="mainNav text-center"
