@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import type { HeadFC } from "gatsby";
-
 import MainLayout from "../layouts/MainLayout";
 import TagBit from "../components/Index/TagBit";
 import PackBit from "../components/Index/PackBit";
@@ -13,6 +12,7 @@ import "../styles/index.scss";
 
 const IndexPage = () => {
   let location = typeof window !== "undefined" ? window.location : "";
+
   return (
     <>
       <ScrollToTop location={location} />
