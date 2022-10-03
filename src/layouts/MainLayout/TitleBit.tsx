@@ -6,7 +6,7 @@ import "./TitleBit.scss";
 
 const TitleBit = () => {
   return (
-    <div id="home" className="titleBit d-flex justify-content-center">
+    <header id="home" className="titleBit d-flex justify-content-center">
       <h1 className="m-0 p-0">
         <a
           href="/"
@@ -17,7 +17,7 @@ const TitleBit = () => {
           <JamesHernandezLogoDesktop />
         </a>
       </h1>
-    </div>
+    </header>
   );
 };
 
