@@ -79,7 +79,7 @@ const PackBit = () => {
           <ul className="docket m-0 p-0 d-flex flex-row flex-wrap justify-content-center">
             {articles &&
               articles.map((article) => {
-                const { articleName, url, lead, image, imgAlt } = article;
+                const { articleName, lead, image, imgAlt } = article;
                 const id = nanoid();
                 return (
                   <li
