@@ -1,11 +1,13 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
+import { graphql, PageProps } from "gatsby";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import type { HeadFC } from "gatsby";
 import TechUsed from "../components/TechUsed";
 import resumeFile from "../assets/official-resume.json";
 import MainLayout from "../layouts/MainLayout";
 import { nanoid } from "nanoid";
+import { DataProps } from "../data/types/GenTypes";
 import "./resume.scss";
 
 const resumePage = () => {
@@ -109,23 +111,29 @@ const resumePage = () => {
 };
 export default resumePage;
 
-export const Head: HeadFC = () => (
+export const Head: HeadFC = ({ data: { site } }: PageProps<DataProps>) => (
   <>
     <meta charSet="UTF-8" />
     <meta httpEquiv="cache-control" content="no-cache" />
-    <meta
-      name="description"
-      content="a user experience and web development business in the South Texas area"
-    />
-    <meta
-      name="keywords"
-      content="design, user experience, developer, react, redux"
-    />
-    <meta name="author" content="James Hernandez" />
+    <meta name="description" content={site.siteMetadata.description} />
+    <meta name="keywords" content={site.siteMetadata.keywords} />
+    <meta name="author" content={site.siteMetadata.author} />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      James Hernandez &mdash; User Experience Designer, Front-end Engineer
-    </title>
+    <title>{site.siteMetadata.title}</title>
   </>
 );
+
+export const query = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+        siteUrl
+        keywords
+        author
+        description
+      }
+    }
+  }
+`;

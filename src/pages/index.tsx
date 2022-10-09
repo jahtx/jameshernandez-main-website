@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import type { HeadFC } from "gatsby";
 import { graphql, PageProps } from "gatsby";
 import MainLayout from "../layouts/MainLayout";
@@ -8,20 +8,9 @@ import AnthologyBit from "../components/Index/AnthologyBit";
 import DigestBit from "../components/Index/DigestBit";
 import ContactBit from "../components/Index/ContactBit";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import { DataProps } from "../data/types/GenTypes";
 import "../styles/index.scss";
 
-type DataProps = {
-  site: {
-    siteMetadata: {
-      title: string;
-      description: string;
-      keywords: string;
-      author: string;
-      siteUrl: string;
-      featuredImage: any;
-    };
-  };
-};
 const IndexPage = () => {
   let location = typeof window !== "undefined" ? window.location : "";
 
@@ -45,10 +34,7 @@ export const Head: HeadFC = ({ data: { site } }: PageProps<DataProps>) => (
   <>
     <meta charSet="UTF-8" />
     <meta httpEquiv="cache-control" content="no-cache" />
-    <meta
-      name="description"
-      content="a user experience and web development business in the South Texas area"
-    />
+    <meta name="description" content={site.siteMetadata.description} />
     <meta name="keywords" content={site.siteMetadata.keywords} />
     <meta name="author" content={site.siteMetadata.author} />
     <meta name="robots" content="index, follow" />
