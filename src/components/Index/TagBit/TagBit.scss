@@ -3,10 +3,13 @@
 
 .tagBit {
   background-color: #e84723;
-  background-image: url("../../../images/back/mobile-screens.png");
+
   background-size: 1200px;
   background-position: center;
   background-repeat: no-repeat;
+  @include MQ(S) {
+    background-image: url("../../../images/back/mobile-screens.png");
+  }
 
   .crate {
     flex-direction: column;
