@@ -1,13 +1,13 @@
 import type { GatsbyConfig } from "gatsby";
-import newConfig from "./src/data/newConfig";
+import siteConfig from "./src/data/siteConfig";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: newConfig.title,
-    siteUrl: newConfig.siteUrl,
-    keywords: newConfig.keywords,
-    author: newConfig.author,
-    description: newConfig.description,
+    title: siteConfig.title,
+    siteUrl: siteConfig.siteUrl,
+    keywords: siteConfig.keywords,
+    author: siteConfig.author,
+    description: siteConfig.description,
   },
   graphqlTypegen: true,
   plugins: [

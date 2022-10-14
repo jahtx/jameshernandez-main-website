@@ -1,4 +1,4 @@
-const newConfig = {
+const siteConfig = {
   title: "James Hernandez | User Experience Designer / Front-end Developer",
   keywords:
     "design, user experience. front-end, developer, react, redux, graphql, json",
@@ -8,4 +8,4 @@ const newConfig = {
     "a user experience and web development business in the South Texas area",
 };
 
-export default newConfig;
+export default siteConfig;
