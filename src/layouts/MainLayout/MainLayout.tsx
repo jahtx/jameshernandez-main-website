@@ -4,10 +4,15 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 
 type MainLayoutProps = {
+  siteLocation?: string;
   children?: React.ReactNode;
 };
 
-const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
+const MainLayout = ({
+  siteLocation,
+  children,
+}: MainLayoutProps): JSX.Element => {
+  console.log("mainlayout sitelocation ", siteLocation);
   return (
     <>
       <Nav />

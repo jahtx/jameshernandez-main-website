@@ -1,6 +1,7 @@
 import React from "react";
 import type { HeadFC } from "gatsby";
 import { graphql, PageProps } from "gatsby";
+import { useLocation } from "@reach/router";
 import MainLayout from "../layouts/MainLayout";
 import TagBit from "../components/Index/TagBit";
 import PackBit from "../components/Index/PackBit";
@@ -12,12 +13,12 @@ import { DataProps } from "../data/types/GenTypes";
 import "../styles/index.scss";
 
 const IndexPage = () => {
-  let location = typeof window !== "undefined" ? window.location : "";
+  const siteLocation = useLocation();
 
   return (
     <>
       <ScrollToTop location={location} />
-      <MainLayout>
+      <MainLayout siteLocation={siteLocation.pathname}>
         <TagBit />
         <PackBit />
         <AnthologyBit />
