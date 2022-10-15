@@ -17,7 +17,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <ScrollToTop location={location} />
+      <ScrollToTop location={siteLocation} />
       <MainLayout siteLocation={siteLocation.pathname}>
         <TagBit />
         <PackBit />
