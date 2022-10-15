@@ -14,6 +14,9 @@ import "../styles/index.scss";
 
 const IndexPage = () => {
   const siteLocation = useLocation();
+  let location = typeof window !== "undefined" ? window.location : "";
+
+  console.log("siteLocation: ", siteLocation.host);
 
   return (
     <>

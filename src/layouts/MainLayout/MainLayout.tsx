@@ -12,7 +12,6 @@ const MainLayout = ({
   siteLocation,
   children,
 }: MainLayoutProps): JSX.Element => {
-  console.log("mainlayout sitelocation ", siteLocation);
   return (
     <>
       <Nav />
