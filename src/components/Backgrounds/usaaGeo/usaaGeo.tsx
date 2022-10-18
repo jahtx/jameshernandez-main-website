@@ -29,7 +29,6 @@ const UsaaGeoHero = () => {
     <div className="usaaHeroGradient">
       <div className="usaaHeroBack">
         <Container className="geoLaptop-container">
-          {" "}
           <GatsbyImage
             image={getImage(geoLaptop)}
             alt="Previous Employers"
