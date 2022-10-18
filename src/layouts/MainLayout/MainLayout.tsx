@@ -1,5 +1,6 @@
 import * as React from "react";
 import TitleBit from "./TitleBit";
+import { useLocation } from "@reach/router";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
@@ -8,10 +9,11 @@ type MainLayoutProps = {
 };
 
 const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
+  const siteLocation = useLocation();
   return (
     <>
       <Nav />
-      <TitleBit />
+      <TitleBit siteLocation={siteLocation.pathname} />
       {children}
       <Footer />
     </>

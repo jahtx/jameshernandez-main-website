@@ -14,7 +14,7 @@ import "../styles/index.scss";
 
 const IndexPage = () => {
   const siteLocation = useLocation();
-
+  console.log(siteLocation);
   return (
     <>
       <ScrollToTop location={siteLocation} />
