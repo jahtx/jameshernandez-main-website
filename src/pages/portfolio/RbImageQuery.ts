@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby";
 
-export const RbfcuImageQuery = () => {
+export const RbImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {

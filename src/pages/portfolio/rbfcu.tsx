@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery, HeadFC } from "gatsby";
 import { nanoid } from "nanoid";
-import { RbfcuImageQuery } from "./RbImageQuery";
+import { RbImageQuery } from "./RbImageQuery";
 import Container from "react-bootstrap/Container";
 import { getImage } from "gatsby-plugin-image";
 import MainLayout from "../../layouts/MainLayout";
@@ -11,7 +11,7 @@ import { default as BoxesBackground } from "../../components/Backgrounds/Boxes/B
 import "./rbfcu.scss";
 
 const PortfolioPage = () => {
-  const data = RbfcuImageQuery();
+  const data = RbImageQuery();
 
   const portItems = [
     {
