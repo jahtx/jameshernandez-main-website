@@ -5,23 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import "./TagBit.scss";
 
 const TagBit = () => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        nameTagImg: file(relativePath: { eq: "name-tag.png" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 85
-              placeholder: BLURRED
-              formats: [WEBP]
-              height: 400
-              transformOptions: { fit: CONTAIN, cropFocus: CENTER }
-            )
-          }
-        }
-      }
-    `
-  );
+  const data = ImageQuery();
   return (
     <section className="tagBit">
       <Container className="crate d-flex">
@@ -57,3 +41,24 @@ const TagBit = () => {
 };
 
 export default TagBit;
+
+export const ImageQuery = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        nameTagImg: file(relativePath: { eq: "name-tag.png" }) {
+          childImageSharp {
+            gatsbyImageData(
+              quality: 85
+              placeholder: BLURRED
+              formats: [WEBP]
+              height: 400
+              transformOptions: { fit: CONTAIN, cropFocus: CENTER }
+            )
+          }
+        }
+      }
+    `
+  );
+  return data;
+};

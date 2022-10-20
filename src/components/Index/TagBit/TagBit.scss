@@ -4,10 +4,13 @@
 .tagBit {
   background-color: #e84723;
 
-  background-size: 1200px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  background-image: url("../../../images/back/shakes-back.png");
   @include MQ(S) {
+    background-size: 1200px;
     background-image: url("../../../images/back/mobile-screens.png");
   }
 
