@@ -9,7 +9,11 @@ const TagBit = () => {
   const randImages = [data.nameTagImg, data.nameSteelTagImg];
 
   const index = Math.floor(Math.random() * randImages.length);
-  console.log("index: ", index);
+
+  const randomGenerator = () => {
+    return Math.floor(Math.random() * randImages.length);
+  };
+  console.log("index: ", randomGenerator());
   return (
     <section className="tagBit">
       <Container className="crate d-flex">
@@ -17,7 +21,7 @@ const TagBit = () => {
           className="crate__first d-flex justify-content-center trans-2sec"
           data-sal="slide-down"
         >
-          {index === 0 ? (
+          {randomGenerator() === 0 ? (
             <GatsbyImage
               className="nameTagImg"
               image={getImage(data.nameTagImg)}
