@@ -29,14 +29,14 @@
       "SiteSpect"
     ],
     "languagesAndTech": [
-      "Angular 2",
       "React / Redux",
+      "JavaScript",
+      "Git",
       "HTML5 / CSS3",
       "SASS",
-      "JavaScript",
       "JQuery",
-      "Git",
-      "Docker"
+      "Docker",
+      "Angular 2"
     ],
     "profiles": [
       {
