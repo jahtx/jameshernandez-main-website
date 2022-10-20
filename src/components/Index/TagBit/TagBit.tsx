@@ -17,11 +17,19 @@ const TagBit = () => {
           className="crate__first d-flex justify-content-center trans-2sec"
           data-sal="slide-down"
         >
-          <GatsbyImage
-            className="nameTagImg"
-            image={getImage(randImages[index])}
-            alt="James Hernandez, User Experience Designer and Front-end Developer"
-          />
+          {index === 0 ? (
+            <GatsbyImage
+              className="nameTagImg"
+              image={getImage(data.nameTagImg)}
+              alt="James Hernandez, User Experience Designer and Front-end Developer"
+            />
+          ) : (
+            <GatsbyImage
+              className="nameTagImg"
+              image={getImage(data.nameSteelTagImg)}
+              alt="James Hernandez, User Experience Designer and Front-end Developer"
+            />
+          )}
         </div>
         <div className="crate__second d-flex text-light justify-content-center align-items-center">
           <div className="crate__innerText one-rem m-1">
