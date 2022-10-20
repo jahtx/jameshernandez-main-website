@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
-import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image";
-import { graphql, useStaticQuery } from "gatsby";
 import nameTagImg from "../../../images/name-tags/james-steel-name-tag.png";
 import nameSteelTagImg from "../../../images/name-tags/james-name-tag.png";
 
@@ -9,6 +7,7 @@ import "./TagBit.scss";
 
 const TagBit = () => {
   const [imag, setImag] = useState(null);
+
   React.useEffect(() => {
     const randImages = [nameSteelTagImg, nameTagImg];
 
@@ -49,37 +48,3 @@ const TagBit = () => {
 };
 
 export default TagBit;
-
-export const ImageQuery = () => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        nameTagImg: file(relativePath: { eq: "name-tags/james-name-tag.png" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 85
-              placeholder: BLURRED
-              formats: [WEBP]
-              height: 400
-              transformOptions: { fit: CONTAIN, cropFocus: CENTER }
-            )
-          }
-        }
-        nameSteelTagImg: file(
-          relativePath: { eq: "name-tags/james-steel-name-tag.png" }
-        ) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 85
-              placeholder: BLURRED
-              formats: [WEBP]
-              height: 400
-              transformOptions: { fit: CONTAIN, cropFocus: CENTER }
-            )
-          }
-        }
-      }
-    `
-  );
-  return data;
-};
