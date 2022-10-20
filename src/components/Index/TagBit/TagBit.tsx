@@ -6,6 +6,9 @@ import "./TagBit.scss";
 
 const TagBit = () => {
   const data = ImageQuery();
+  const randImages = [data.nameTagImg, data.nameTagImg2];
+
+  const index = Math.floor(Math.random() * randImages.length);
   return (
     <section className="tagBit">
       <Container className="crate d-flex">
@@ -15,7 +18,7 @@ const TagBit = () => {
         >
           <GatsbyImage
             className="nameTagImg"
-            image={getImage(data.nameTagImg)}
+            image={getImage(randImages[index])}
             alt="James Hernandez, User Experience Designer and Front-end Developer"
           />
         </div>
@@ -46,7 +49,18 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        nameTagImg: file(relativePath: { eq: "name-tag.png" }) {
+        nameTagImg: file(relativePath: { eq: "james-name-tag.png" }) {
+          childImageSharp {
+            gatsbyImageData(
+              quality: 85
+              placeholder: BLURRED
+              formats: [WEBP]
+              height: 400
+              transformOptions: { fit: CONTAIN, cropFocus: CENTER }
+            )
+          }
+        }
+        nameTagImg2: file(relativePath: { eq: "james-name-tag2.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 85
