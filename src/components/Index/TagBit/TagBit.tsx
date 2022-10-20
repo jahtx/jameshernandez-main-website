@@ -1,19 +1,23 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
+import nameTagImg from "../../../images/name-tags/james-steel-name-tag.png";
+import nameSteelTagImg from "../../../images/name-tags/james-name-tag.png";
+
 import "./TagBit.scss";
 
 const TagBit = () => {
-  const data = ImageQuery();
-  const randImages = [data.nameTagImg, data.nameSteelTagImg];
+  const [imag, setImag] = useState(null);
+  React.useEffect(() => {
+    const randImages = [nameSteelTagImg, nameTagImg];
 
-  const index = Math.floor(Math.random() * randImages.length);
+    const randomGenerator = () => {
+      return Math.floor(Math.random() * randImages.length);
+    };
+    setImag(randImages[randomGenerator()]);
+  }, []);
 
-  const randomGenerator = () => {
-    return Math.floor(Math.random() * randImages.length);
-  };
-  console.log("index: ", randomGenerator());
   return (
     <section className="tagBit">
       <Container className="crate d-flex">
@@ -21,19 +25,7 @@ const TagBit = () => {
           className="crate__first d-flex justify-content-center trans-2sec"
           data-sal="slide-down"
         >
-          {randomGenerator() === 0 ? (
-            <GatsbyImage
-              className="nameTagImg"
-              image={getImage(data.nameTagImg)}
-              alt="James Hernandez, User Experience Designer and Front-end Developer"
-            />
-          ) : (
-            <GatsbyImage
-              className="nameTagImg"
-              image={getImage(data.nameSteelTagImg)}
-              alt="James Hernandez, User Experience Designer and Front-end Developer"
-            />
-          )}
+          <img src={imag} className="nameTagImg" alt="James Hernandez" />
         </div>
         <div className="crate__second d-flex text-light justify-content-center align-items-center">
           <div className="crate__innerText one-rem m-1">
