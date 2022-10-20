@@ -6,7 +6,7 @@ import "./TagBit.scss";
 
 const TagBit = () => {
   const data = ImageQuery();
-  const randImages = [data.nameTagImg, data.nameTagImg2];
+  const randImages = [data.nameTagImg, data.nameSteelTagImg];
 
   const index = Math.floor(Math.random() * randImages.length);
   return (
@@ -49,7 +49,7 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        nameTagImg: file(relativePath: { eq: "james-name-tag.png" }) {
+        nameTagImg: file(relativePath: { eq: "name-tags/james-name-tag.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 85
@@ -60,7 +60,9 @@ export const ImageQuery = () => {
             )
           }
         }
-        nameTagImg2: file(relativePath: { eq: "james-name-tag2.png" }) {
+        nameSteelTagImg: file(
+          relativePath: { eq: "name-tags/james-steel-name-tag.png" }
+        ) {
           childImageSharp {
             gatsbyImageData(
               quality: 85
