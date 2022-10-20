@@ -9,6 +9,7 @@ const TagBit = () => {
   const randImages = [data.nameTagImg, data.nameSteelTagImg];
 
   const index = Math.floor(Math.random() * randImages.length);
+  console.log("index: ", index);
   return (
     <section className="tagBit">
       <Container className="crate d-flex">
