@@ -9,11 +9,7 @@
   background-repeat: no-repeat;
   background-size: 800px;
   background-repeat: repeat;
-  background-image: url("../../../images/back/shakes-back.png");
-  // @include MQ(S) {
-  //   background-size: 800px;
-  //   background-repeat: repeat;
-  // }
+  background-image: url("../../../images/back/shakes-back-small.png");
 
   .crate {
     flex-direction: column;
