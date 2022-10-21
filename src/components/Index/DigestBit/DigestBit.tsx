@@ -25,7 +25,7 @@ const DigestBit = () => {
     `
   );
   return (
-    <div id="cv" className="digestBit text-light">
+    <section id="cv" className="digestBit text-light">
       <div className="trans-2sec" data-sal="fade" data-sal-easing="ease">
         <h2 className="text-center t-block pt-3 one-pt-8-rem">Résumé</h2>
         <Container>
@@ -52,7 +52,7 @@ const DigestBit = () => {
           </div>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 

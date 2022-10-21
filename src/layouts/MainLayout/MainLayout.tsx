@@ -14,7 +14,7 @@ const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
     <>
       <Nav />
       <TitleBit siteLocation={siteLocation.pathname} />
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   );

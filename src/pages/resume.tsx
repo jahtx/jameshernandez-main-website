@@ -56,9 +56,11 @@ const resumePage = () => {
                     {clients ? null : (
                       <>
                         <p>{summary}</p>
-                        {technologies && (
-                          <TechUsed technologies={technologies} />
-                        )}
+                        <aside>
+                          {technologies && (
+                            <TechUsed technologies={technologies} />
+                          )}
+                        </aside>
                       </>
                     )}
                   </div>

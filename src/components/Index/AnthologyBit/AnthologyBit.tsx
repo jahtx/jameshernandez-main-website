@@ -23,7 +23,7 @@ const AnthologyBit = () => {
     `
   );
   return (
-    <div id="portfolio" className="anthologyBit text-light">
+    <section id="portfolio" className="anthologyBit text-light">
       <div className="trans-2sec" data-sal="fade" data-sal-easing="ease">
         <h2 className="text-center t-block pt-3 one-pt-8-rem">Portfolio</h2>
         <Container>
@@ -53,7 +53,7 @@ const AnthologyBit = () => {
           </div>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 

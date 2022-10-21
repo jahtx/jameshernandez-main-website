@@ -25,7 +25,7 @@ const ContactBit = () => {
     }
   };
   return (
-    <div id="contact" className="contactBit">
+    <section id="contact" className="contactBit">
       <div className="trans-2sec">
         <h2 className="text-center t-block pt-3 one-pt-8-rem">Contact</h2>
 
@@ -132,7 +132,7 @@ const ContactBit = () => {
           )}
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 
