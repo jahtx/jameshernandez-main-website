@@ -17,7 +17,7 @@ const Nav = () => {
   };
   return (
     <>
-      <div className="mobileMenu" role="tablist">
+      <nav className="mobileMenu" role="tablist">
         <button
           role="tab"
           className="hamburger-icon"
@@ -48,7 +48,7 @@ const Nav = () => {
           <div aria-hidden="true" className="clear"></div>
         </button>
 
-        <nav
+        <div
           id="nav"
           role="navigation"
           className={"listHolder " + (isActive ? "show" : null)}
@@ -103,13 +103,13 @@ const Nav = () => {
               </button>
             </li>
           </ul>
-        </nav>
+        </div>
 
         <div
           className={"underBack " + (isActive ? "slide" : null)}
           id="under"
         ></div>
-      </div>
+      </nav>
       <nav
         className="mainNav text-center"
         aria-labelledby="main menu for desktop"
