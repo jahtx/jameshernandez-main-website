@@ -93,6 +93,7 @@ const Nav = () => {
               })}
             <li role="none">
               <button
+                role="tab"
                 className="sr-only"
                 aria-label="Close Navigation Menu"
                 onClick={handleToggle}
