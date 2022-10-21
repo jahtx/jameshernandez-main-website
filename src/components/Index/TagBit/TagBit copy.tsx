@@ -2,9 +2,23 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
+import lanyardTag from "../../../images/name-tags/lanyardTag.png";
+import steelTag from "../../../images/name-tags/steelTag.png";
+import hookTag from "../../../images/name-tags/hookTag.png";
 import "./TagBit.scss";
 
 const TagBit = () => {
+  const [tagimage, setTagimage] = useState(null);
+
+  React.useEffect(() => {
+    const randImages = [lanyardTag, steelTag, hookTag];
+
+    const randomGenerator = () => {
+      return Math.floor(Math.random() * randImages.length);
+    };
+    setTagimage(randImages[randomGenerator()]);
+  }, []);
+
   const data = ImageQuery();
   return (
     <section className="tagBit">
@@ -13,6 +27,11 @@ const TagBit = () => {
           className="crate__first d-flex justify-content-center trans-2sec"
           data-sal="slide-down"
         >
+          <img
+            src={tagimage}
+            className="nameTagImg"
+            alt="James Hernandez Name Tag"
+          />
           <GatsbyImage
             className="nameTagImg"
             image={getImage(data.nameTagImg)}
@@ -46,7 +65,7 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        nameTagImg: file(relativePath: { eq: "name-tags/hookTag.png" }) {
+        nameTagImg: file(relativePath: { eq: "hookTag.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 85
