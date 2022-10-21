@@ -17,25 +17,38 @@ const Nav = () => {
   };
   return (
     <>
-      <nav className="mobileMenu" aria-labelledby="main menu for mobile">
+      <div className="mobileMenu" role="tablist">
         <button
           role="tab"
           className="hamburger-icon"
-          id="icon"
+          id="menubutton"
           aria-label="Show Navigation Menu"
           tabIndex={0}
-          aria-expanded="false"
-          aria-controls="nav"
+          aria-expanded={isActive ? true : false}
+          aria-controls="mobileMenu"
+          aria-haspopup="true"
           onClick={handleToggle}
         >
-          <div className={"icon-1 " + (isActive ? "a" : null)} id="a"></div>
-          <div className={"icon-2 " + (isActive ? "c" : null)} id="b"></div>
-          <div className={"icon-3 " + (isActive ? "b" : null)} id="c"></div>
+          <div
+            aria-hidden="true"
+            className={"icon-1 " + (isActive ? "a" : null)}
+            id="a"
+          ></div>
+          <div
+            aria-hidden="true"
+            className={"icon-2 " + (isActive ? "c" : null)}
+            id="b"
+          ></div>
+          <div
+            aria-hidden="true"
+            className={"icon-3 " + (isActive ? "b" : null)}
+            id="c"
+          ></div>
 
-          <div className="clear"></div>
+          <div aria-hidden="true" className="clear"></div>
         </button>
 
-        <div
+        <nav
           id="nav"
           role="navigation"
           className={"listHolder " + (isActive ? "show" : null)}
@@ -43,9 +56,20 @@ const Nav = () => {
           <h2 id="mainmenulabel" className="sr-only">
             Main Menu
           </h2>
-          <ul id="mainList" className={isActive ? "show" : null}>
-            <li>
-              <a href="/#home" onClick={handleToggle} className="no-break">
+          <ul
+            id="mobileMenu"
+            role="menu"
+            aria-labelledby="menubutton"
+            aria-label="Main Menu"
+            className={isActive ? "show" : null}
+          >
+            <li role="none">
+              <a
+                role="menuitem"
+                href="/#home"
+                onClick={handleToggle}
+                className="no-break"
+              >
                 Home
               </a>
             </li>
@@ -54,38 +78,49 @@ const Nav = () => {
                 const { linkName, url, ariaLabel } = navItem;
                 const id = nanoid();
                 return (
-                  <li key={id}>
+                  <li role="none" key={id}>
                     <a
+                      role="menuitem"
                       href={url}
                       onClick={handleToggle}
                       aira-label={ariaLabel}
                       className="no-break"
                     >
-                      <div>{linkName}</div>
+                      {linkName}
                     </a>
                   </li>
                 );
               })}
+            <li role="none">
+              <button
+                className="sr-only"
+                aria-label="Close Navigation Menu"
+                onClick={handleToggle}
+                aria-controls="mobileMenu"
+              >
+                close menu
+              </button>
+            </li>
           </ul>
-        </div>
+        </nav>
 
         <div
           className={"underBack " + (isActive ? "slide" : null)}
           id="under"
         ></div>
-      </nav>
+      </div>
       <nav
         className="mainNav text-center"
         aria-labelledby="main menu for desktop"
       >
-        <ul>
+        <ul role="menu" aria-label="Main Menu">
           {navItems &&
             navItems.map((navItem) => {
               const { linkName, url, ariaLabel } = navItem;
               const id = nanoid();
               return (
-                <li key={id}>
-                  <a href={url} aira-label={ariaLabel}>
+                <li role="none" key={id}>
+                  <a role="menuitem" href={url} aira-label={ariaLabel}>
                     {linkName}
                   </a>
                 </li>
