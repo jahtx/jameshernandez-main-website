@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
-import nameTagImg from "../../../images/name-tags/james-steel-name-tag.png";
-import nameSteelTagImg from "../../../images/name-tags/james-name-tag.png";
+import lanyardTag from "../../../images/name-tags/lanyardTag.png";
+import steelTag from "../../../images/name-tags/steelTag.png";
+import hookTag from "../../../images/name-tags/hookTag.png";
 
 import "./TagBit.scss";
 
@@ -9,7 +10,7 @@ const TagBit = () => {
   const [imag, setImag] = useState(null);
 
   React.useEffect(() => {
-    const randImages = [nameSteelTagImg, nameTagImg];
+    const randImages = [lanyardTag, steelTag, hookTag];
 
     const randomGenerator = () => {
       return Math.floor(Math.random() * randImages.length);
