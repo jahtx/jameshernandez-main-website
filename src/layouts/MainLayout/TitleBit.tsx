@@ -5,7 +5,6 @@ import JamesHernandezLogoDesktop from "../../assets/james-hernandez-logo-desktop
 import "./TitleBit.scss";
 
 const TitleBit = ({ siteLocation }) => {
-  console.log("TitleBit siteLocation: ", siteLocation);
   return (
     <header id="home" className="titleBit d-flex justify-content-center">
       <h1 className="m-0 p-0">
