@@ -6,7 +6,7 @@ import "./TechMiniCard.scss";
 const TechMiniCard = ({ tech }) => {
   const data = ImageQuery();
 
-  const renderSwitch = (param) => {
+  const renderSwitch = (param: string) => {
     switch (param) {
       case "Angular":
         return {

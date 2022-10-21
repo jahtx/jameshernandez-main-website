@@ -2,11 +2,8 @@
 @import "../../../styles/variables/fonts-and-colors.scss";
 
 .tagBit {
-  background-color: #e84723;
-
-  background-size: cover;
+  background-color: $stdesign-scheme-orange;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: 800px;
   background-repeat: repeat;
   background-image: url("../../../images/back/shakes-back-small.png");
