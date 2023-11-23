@@ -57,7 +57,7 @@ const PackBit = () => {
     `
   );
 
-  const renderSwitch = (param) => {
+  const renderSwitch = (param: string) => {
     switch (param) {
       case "process":
         return data.processImg;

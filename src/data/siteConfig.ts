@@ -7,7 +7,7 @@ const siteConfig = {
   description:
     "a user experience and web development business in the South Texas area",
   googleAnalyticsID: "G-VFZEZQXCGB",
-  copyright: "Copyright © 2022, James Hernandez, All Rights Reserved",
+  copyright: "Copyright © 2023, James Hernandez, All Rights Reserved",
 };
 
 export default siteConfig;
